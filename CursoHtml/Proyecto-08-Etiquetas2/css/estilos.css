@@ -1,0 +1,44 @@
+
+/* h2 que sean hermanas con una h1 precedente
+*/
+
+h1~h2{
+	background: red;
+}
+
+
+/* etiquetas div con una hermana p 
+es decir, primero un p y después la div
+
+p+div{
+	background: red;
+}
+
+*/
+
+
+/* solo etiquetas p hija directa de section
+
+section>p{
+	background: red;
+}
+*/
+
+/* segundo ejemplo, etiquetas descendientes
+
+
+section div p em{
+	background: red;
+}
+*/
+
+
+/*---primer ejemplo---*/
+/* Aplica los estilos únicamente a la etiqueta em que está dentro de h1.
+El espacio determina que em es descendiente de h1
+*/
+/*
+h1 em{
+	background: red;
+}
+*/
