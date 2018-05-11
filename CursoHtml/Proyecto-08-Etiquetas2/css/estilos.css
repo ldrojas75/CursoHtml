@@ -1,10 +1,165 @@
+/* selector por atributos
+
+
+img[alt]{
+	background: red;
+}
+
+*/
+
+
+
+/* selector de aquellos párrafos que tengan el traibuto definido
+
+
+p[title]{
+	background: red;
+}
+*/
+
+
+/* Seleccionar los párrafos únicamente que están dentro de section y tienen clase definida
+
+
+section p[class]{
+	color: white;
+	background: blue;
+	padding: 10px;
+}
+*/
+
+/* seleccionar los que tengan la clase tit y además el atributo title
+
+.tit[title]{
+	color: white;
+	background: blue;
+	padding: 10px;	
+}
+*/
+
+
+/* seleccionar los que 
+	están dentro de section
+		sean etiquetas "p"
+		que tengan definido class
+		 y además tengan atributo title
+
+
+section p[class][title]{
+		 	color: white;
+		 	background: blue;
+		 	padding: 10px;	
+		 }
+		 */
+
+/*seleccionar todos los párrafos que tienen atributo titule="Principal"
+
+[title="Principal"]{		 
+		 	color: white;
+		 	background: blue;
+		 	padding: 10px;	
+		 }
+		 */
+
+/*seleccionar imagenes en section
+
+
+section img{
+	border: 10px solid black;
+	padding: 10px;
+}
+*/
+
+/*seleccionar imagenes en section, con atributo alt="avion2"
+
+
+section img[alt="avion2"]{
+	border: 10px solid black;
+	padding: 10px;
+	opacity: 0.5;
+}
+*/
+
+/*seleccionar imagenes en section, con atributo alt que contiene la palabra "avion"
+
+
+section img[alt*="avion"]{
+	border: 10px solid black;
+	padding: 10px;
+	opacity: 0.5;
+}
+*/
+
+
+/*seleccionar imagenes en section, con atributo alt que comienza con la palabra "avion"
+
+section img[alt^="avion"]{
+	border: 10px solid black;
+	padding: 10px;
+	opacity: 0.5;
+}
+*/
+
+/*seleccionar todos los hipervínculos - se selecciona todas las
+	etiquetas "a"
+	cuyo atributo "href"
+	comienza con "http"
+
+a[href^="http://"]{
+	border: 10px solid black;
+	padding: 10px;
+	opacity: 0.5;
+}
+*/
+
+/*seleccionar todos los hipervínculos - se selecciona todas las
+	etiquetas "a"
+	cuyo atributo "href"
+	comienza con ".com"
+	
+
+	a[href$=".com"]{
+		border: 10px solid black;
+		padding: 10px;
+		opacity: 0.5;
+	}
+	*/
+
+/*seleccionar todos los UL LI que tienen como hijo un enlace en un PDF
+
+ul li a[href$=".pdf"]{
+	border: 2px solid black;
+}
+*/	
+
+/* seleccionar etiquetas que contengan a "avion" como una palabra entera, 
+es decir, separada por espacios de otras etiquetas 
+
+
+[alt~="avion"]{
+	border: 2px solid black;
+}
+*/	
+
+
+/* selector de aquellos párrafos cuyo atributo sea igual a un valor
+selecciono etiquetas "p" cuyo title sea igual a "Principal"
+
+
+p[title="Principal"]{
+	background: red;
+}
+
+*/
+
 
 /* h2 que sean hermanas con una h1 precedente
-*/
+
 
 h1~h2{
 	background: red;
 }
+*/
 
 
 /* etiquetas div con una hermana p 
@@ -42,3 +197,135 @@ h1 em{
 	background: red;
 }
 */
+
+/*--estilos para enlaces--*/
+
+/*
+a:link{
+	background: red;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+a:visited{
+	background: gray;
+	color: white;
+	border-color: red; 
+	outline-color: blue;
+}
+*/
+
+/* aplicar una propiedad a TODOS los párrafos cuando el mouse pasa sobre
+ellos
+
+p:hover{
+	color:white;
+	background: blue;
+	padding: 10px;
+}
+
+*/
+
+
+/* aplicar una propiedad al botón enviar cuando el mouse pasa por encima,
+distinta a la que tiene el resto del tiempo.
+Sólo se especifican las propiedades que cambian con respecto al comportamiento
+por default.
+
+*/
+
+input[type="submit"]{
+	background: rgb(28, 68, 228);
+	color: white;
+	font-size: 16px;
+	padding; 5px 20px;
+	cursor: pointer
+	border-radius: 15px;
+}
+
+input[type="submit"]:hover{
+	background: rgb(228, 168, 228);
+	padding: 15px 20px;
+}
+
+input[type="submit"]:active{
+	background: orange;
+	padding: 15px 20px;
+}
+
+
+/* aplicar una propiedad cuando un elemento está activo.
+cuando el usuario hace clic hasta que lo suelta
+*/
+/*
+p:active{
+	color:white;
+	background: blue;
+	padding: 10px;
+}
+
+a:focus{
+	background: black;
+	color: orange;
+	border: 2px black solid;
+}
+
+input:focus{
+	background: black;
+	color: orange;
+	border: 2px black solid;	
+}
+*/
+
+/* seleccionar el primer hijo de UL
+
+nav ul li:first-child{
+	background: red;
+}
+
+article p:first-child{
+	background: red;
+
+}
+*/
+
+/* pone en gris los elementos pares de una lista
+
+
+nav li:nth-child(even){
+	background: gray;
+}
+
+nav li:nth-child(odd){
+	background: lightblue;
+}
+*/
+
+/* toma los elementos vacíos de una tabla
+
+table{
+	border: 2px solid gray;
+}
+
+table td{
+	background: green;
+	padding: 10px;
+}
+
+table td:empty{
+	background: gray;
+}
+*/
+
+/* toma todos los elementos de la lista que no tienen la clase elegido
+*/
+
+article ul li:not(.elegido){
+	border: 1px solid black;
+	background: red;
+}
+
+form input:not([type="submit"]){
+	background: red;
+}

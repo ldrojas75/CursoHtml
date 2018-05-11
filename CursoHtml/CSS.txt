@@ -1,0 +1,139 @@
+﻿Estructura básica			
+
+h1	{color:		black;}	
+Selector	Propiedad	Valor	
+Selector	----- declaración	-----	
+
+!important	regla muy relevante		
+!inherit	heredar		
+/* esto es un comentario */	
+
+OJO: No se puede anidar comentarios		
+
+.nombreDeLaClase
+Selector del tipo etiqueta. Debe comenzar con un punto
+div.nombreDeLaClase
+Selector del tipo etiqueta. Busca una etiqueta DIV cuya clase sea NombreDeLaClase
+[atributo]
+
+[atributo=valor]
+atributo que sea igual al valor
+
+[atributo*=valor]
+atributo que contiene al valor
+
+[atributo~=valor]
+atributo que tiene al valor como una palabra completa (separada por espacios)
+
+[atributo^=valor]
+atributo que comienza con el valor
+
+[atributo$=valor]
+atributo que finaliza con el valor
+
+
+Selector de pseudoclase:
+Selector:Pseudo-clase{propiedad: valor;}
+
+:link
+pseudoclase link - aplica a todos los enlaces que no fueron visitados por el usuario. Sólo es aplicable a hipervínculos.
+:visited
+pseudoclase visited - aplica a todos los enlaces que ya fueron visitados por el usuario. Sólo es aplicable a hipervínculos.
+
+ejemplo: a:visited{...}
+(esto es para todos los "a", que son enlaces, visitados)
+
+Sólo se pueden aplicar estas propiedades a los hipervínculos visited:
+
+background: gray;
+color: white;
+border-color: red; 
+outline-color: blue;
+
+
+:hover
+Es como una propiedad "mouse over". Se puede aplicar a cualquier elemento html.
+
+:active
+Propiedad cuando un elemento HTML está activo: cuando está seleccionadocon el mouse, hasta que el usuario lo suelta. O cuando lo tienen con su dedo en el celular, hasta que lo suelta.
+
+:focus
+Dar un estilo a los objetos que obtienen el foco (por ejemplo, acción del tab)
+
+:first-child
+aplicar solamente al primer elemento de la etiqueta
+
+:last-child
+aplicar solamente al último  elemento de la etiqueta
+
+:only-child
+aplicar atributos a etiquetas que son hijos únicos y no tienen hermanos
+
+:only-of-type
+aplicar atributos a etiquetas que no son hijos únicos pero si tienen tipos únicos.
+
+:nth-child(even)
+aplica estilo sólo a los elementos pares
+en lugar de even se puede usar (odd) y (Yn+X)
+A partir de la posición X cuenta Y lugares
+
+:nth-last-child
+igual a nth-child pero cuenta los elemntos desde abajo
+
+:empty
+le aplica un estilo a los elementos o etiquetas que adentro están vacías, 
+<etiqueta></etiqueta>
+
+:not
+todos los que no aplica algo. Por ejemplo que son de cierta etiqueta pero no tienen cierta clase.
+
+form input:not([type="email"]){
+Todos los campos de formulario que no sean email.
+
+
+* ----------  RELEVANCIA ----------*
+
+Orden de relevancias de HTML									
+
+REGLA 1: Si un estilo está definido en la cabecera, y entra en conflicto con uno definido en el archivo externo, se aplica la definición más cercana en el código.									
+
+REGLA 2; Los estilos en línea, al estar aplicados siempre en la etiqueta, siempre tienen predominancia									
+
+REGLA 3: Si un estilo tiene el atributo IMPORTANT siempre se aplica ese estilo.									
+
+
+Cálculo de especificidad de una regla de CSS									
+Es un estilo en línea							c/u multiplica x	1000
+Cantidad de IDs  (por ejemplo div#IdDelDiv		c/u multiplica x	100	
+A una clase, pseudoclas o atributo. Ejemplo div.nombreDeLaClase																c/u multiplica x	10
+Etiquetas y pseudoelementos - Ejemplo, p, o div, p:firstletter																c/u multiplica x	1
+
+Sumar el total
+
+Si el total empata, gana el orden en que son definidas: la última definida									
+El navegador leé el contenido de arriba hacia abajo, y se aplica lo último definido											
+
+* ------------- HERENCIA -----------------*
+
+ancestro	ancestro	ancestro	padres	hijos	
+
+HTML					
+L	HEAD				
+L	BODY				
+L	P			
+L	DIV			
+L	UL		
+L	LI	
+L	LI	
+L	LI	
+
+
+Hay una lista de propiedades CSS que son heredables y otras que no lo son						
+
+
+Cascada CSS3						
+1) importancia de la regla						
+2) especificidad de la regla						
+3) cercanía a la regla						
+Si dos o más declaraciones tienen la misma importancia, se aplica la de mayor especificidad, y si empatan, va por cercanía						
+
