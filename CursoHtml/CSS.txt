@@ -90,6 +90,36 @@ todos los que no aplica algo. Por ejemplo que son de cierta etiqueta pero no tie
 form input:not([type="email"]){
 Todos los campos de formulario que no sean email.
 
+* ---- PSEUDOCLASES ---- *
+
+:enable
+aplica estilo a todos los elementos de formulario que están habilitados
+
+:disable
+
+
+:checked 
+
+ejemplo:
+
+
+form input[type="email"]:enabled{
+background: green;
+}
+
+*---- pseudoelementos -----*
+selector::pseudoelementos
+
+::first-lines
+selecciona la primera lìnea de un párrafo
+
+::first-letter
+selecciona la primera letra de un párrafo o div o donde lo pongamos
+::before
+
+::after
+
+
 
 * ----------  RELEVANCIA ----------*
 
