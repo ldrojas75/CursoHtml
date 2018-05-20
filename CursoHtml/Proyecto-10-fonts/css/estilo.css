@@ -1,1 +1,82 @@
 ﻿
+@font-face {
+    font-family: 'bpdot01';
+    src: url('../fonts/bpdotsunicaseverticalbold-webfont.woff2') format('woff2'),
+    url('../fonts/bpdotsunicaseverticalbold-webfont.woff') format('woff'),
+    url(../fonts/bpdotsunicaseverticalbold-webfont.ttf) format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'bpdot02';
+    src: url('../fonts/bpdotsunicasevertical-webfont.woff2') format('woff2'),
+    url('../fonts/bpdotsunicasevertical-webfont.woff') format('woff'),
+    url('../fonts/bpdotsunicasevertical-webfont.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'bodot03';
+    src: url('../fonts/bpdotsunicasebold-webfont.woff2') format('woff2'),
+    url('../fonts/bpdotsunicasebold-webfont.woff') format('woff'),
+    url('../fonts/bpdotsunicasebold-webfont.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'metroregular';
+    src: url('metro-webfont.woff2') format('woff2'),
+    url('metro-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'exo_2';
+    src: url('../fonts/exo2-extralightcondensed-webfont.woff2') format('woff2'),
+    url('../fonts/exo2-extralightcondensed-webfont.woff') format('woff'),
+    url('../fonts/exo2-extralightcondensed.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: 'exo_2';
+}
+
+h1{
+    font-family: 'bpdot01';
+    font-weight: normal;
+}
+
+
+h2{
+    font-family: 'bpdot02';
+    font-weight: normal;
+}
+
+.finale{
+    font-family: 'metroregular';
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.google_class{
+    font-family: 'Dancing Script';
+}
+
+p span{
+    font-style: italic;
+    font-weight: bold;
+}

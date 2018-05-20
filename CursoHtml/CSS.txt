@@ -8,6 +8,9 @@ Selector	----- declaración	-----
 !inherit	heredar		
 /* esto es un comentario */	
 
+agrupar selectores, es decir aplicar la misma regla a màs de un selector;
+selector, selector, selector{...}
+
 OJO: No se puede anidar comentarios		
 
 .nombreDeLaClase
@@ -167,3 +170,77 @@ Cascada CSS3
 3) cercanía a la regla						
 Si dos o más declaraciones tienen la misma importancia, se aplica la de mayor especificidad, y si empatan, va por cercanía						
 
+
+
+*--------- FUENTES -------------*
+
+La propiedad font-size se hereda, entonces se puede asignar a body para no complicarse. 
+El navegador busca las fuentes instaladas en el sistema operativo del usuario.
+
+Hay ciertas etiquetas que no heredan naturalmente el tipo de letra. Por lo tanto hay que forzar la herencia:
+
+select, textarea, input{
+font-family: inherit;
+}
+
+Fuentes comunes a todos los sistemas operativos:
+
+Arial
+Comic Sans MS
+Courier New
+Georgia
+Impact
+Trebuchet MS
+Times New Roman
+Verdana
+
+Otra opción es precargar fuentes externas. Para eso en lugar de un selector, en css hay que usar una regla:
+@font
+
+Luego se pueden traer las fuentes de la PC, son archivos
+.otf
+.ttf
+
+O comprarlas de otros sitios:
+www.fontsquirrel.com
+www.efonts.co
+www.myfonts.com
+
+Para usarlas en la web, hay que tener licenciad de la fuente, y a la vez tiene que estar optimizada, convertida, a web. Los mismos sitios incluyen una herramienta de transofrmación en paquete web.
+
+Formatos de fuentes:
+
+EOT - Embedded Open Type - de compatibilidad original - sólo en Internet Explorer
+WOFF - Web Open Font Format - es el estándar actual de la web
+OTF - no es web, hay que convertirlos a web antes de usar
+TTF - no es web, hay que convertirlos a web antes de usar
+SVG - sólo soportado por apple
+
+Por compatibilidad, siempre consultar en
+caniuse.com
+
+También se puede usar Google Fonts.
+Simplemente se incluye una línea 
+
+
+*-------- unidades de tamaño de fonts --------*
+
+Pueden ser de tamaño aobsuluto o relativo.
+
+Absoluto: unidades:
+
+centímetros		cm
+milímetros		mm
+píxeles			px
+pulgadas		in
+picas			pc
+puntos 			pt
+
+Siempre tendrán el mismo tamaño al margen del dispositivo en el que se encuentren. Siempre van a ser del mismo tamaño.
+
+
+Relativas: em
+
+1em equivale al tamaño de la fuente definida en la etiqueta padre
+
+1rem equivale al tamaño de la fuente definida en la etiqueta raíz del documento (<HTML>)
