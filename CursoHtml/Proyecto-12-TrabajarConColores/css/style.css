@@ -1,0 +1,85 @@
+﻿/* el color general del sitio se define en la etiqueta body */
+
+body{
+	background-image: url("../images/waterfall.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 1200px;
+	background-color: blue;
+	background-attachment: fixed;
+	font-size: 16px;
+}
+
+.palabraclave{
+	font-size: 3em;
+	width: 800px;
+	border: 20px dashed red;
+	margin: 10px auto;
+	text-align: center;
+	padding: 20px;
+	color: orange;
+	background-image: url(../images/helicoptero.jpg);
+	background-clip: content-box;	
+}
+.hexadecimales{
+	font-size: 3em;
+	width: 800px;
+	border: 1px solid red;
+	margin: 10px auto;
+	text-align: center;
+	padding: 10px;
+	color: #34d47d;	
+/*	background-image: url(../images/helicoptero.jpg);
+background-size: 136px;*/
+background: url(../images/helico2.jpg) no-repeat center top / 136px auto,
+url(../images/helicoptero.jpg) no-repeat center top / 3 36px auto;
+}
+.rgb{
+	font-size: 3em;
+	width: 800px;
+	border: 1px solid red;
+	margin: 10px auto;
+	text-align: center;
+	padding: 10px;
+	color: rgb(80,133,103);	
+	background-color: rgba(133,214,076,0.25);
+
+}
+
+.rgba{
+	font-size: 3em;
+	width: 800px;
+	border: 1px solid red;
+	margin: 10px auto;
+	text-align: center;
+	padding: 10px;
+	color: rgba(255,0,0,0.25);	
+}
+.hsl{
+	font-size: 3em;
+	width: 800px;
+	border: 1px solid red;
+	margin: 10px auto;
+	text-align: center;
+	padding: 10px;
+	color: hsl(180,50%,50%);
+	background-image: url(../images/helicoptero.jpg);
+	background-repeat: no-repeat;
+	background-size:  contain;
+	background-position: center center;
+
+}
+.hsla{
+	font-size: 3em;
+	width: 800px;
+	border: 1px solid red;
+	margin: 10px auto;
+	text-align: center;
+	padding: 10px;
+	color: hsla(180,50%,50%,.5);
+	background-image: url(../images/helicoptero.jpg);
+	background-repeat: no-repeat;
+	background-size:  cover;
+	background-position: center center;
+	
+}

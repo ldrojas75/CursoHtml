@@ -244,3 +244,10 @@ Relativas: em
 1em equivale al tamaño de la fuente definida en la etiqueta padre
 
 1rem equivale al tamaño de la fuente definida en la etiqueta raíz del documento (<HTML>)
+
+IMagenes
+
+Se usa "background"
+Para abreviar propiedades de background se puede poner todo en este orden:
+
+backgrounsd: b-image b-repeat b-position / b-size b-attachment b-clip b-color

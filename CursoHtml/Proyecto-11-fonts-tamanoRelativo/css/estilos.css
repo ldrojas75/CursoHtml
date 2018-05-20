@@ -1,6 +1,36 @@
-﻿body{
+﻿html{
 	font-size: 16px;
 }
+body{
+	line-height: 1.5rem;
+}
+
+.intro{
+	font-size: 1.25rem;
+}
+
+h1{
+	font-size: 2.1875rem;
+	background: red;
+	width: 37.5rem;
+	height: 3rem;
+
+}
+
+h2{font-size: 2rem;
+
+}
+
+h3{font-size: 1.75rem;}
+
+
+
+/* trabajando con unidades relativas a la etiqueta contenedora. 
+
+body{
+	font-size: 16px;
+}
+
 
 h1{
 	font-size: 2.5em;
@@ -24,3 +54,4 @@ section{
 	height: 25em;
 	margin:0 auto;
 }
+*/
