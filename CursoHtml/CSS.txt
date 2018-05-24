@@ -245,9 +245,62 @@ Relativas: em
 
 1rem equivale al tamaño de la fuente definida en la etiqueta raíz del documento (<HTML>)
 
+Sombras:
+Se usa la propiedad text-shadow
+
+text-shadow: 0px 2px 3px #555 donde cada paràmetro significa:
+x-offset y-offset blur color
+Se puede agregar más de una sombra, simplemente agregando comillas y repitiendo los parámetros.
+
+
 IMagenes
 
 Se usa "background"
 Para abreviar propiedades de background se puede poner todo en este orden:
 
 backgrounsd: b-image b-repeat b-position / b-size b-attachment b-clip b-color
+
+*------------ MODELO DE LA CAJA  -------------------*
+
+
+............................Top
+.....*-----------------------------------------------*
+.....|                    Margin                     | 
+.....|   *---------------------------------------*   |
+.....|   |                Border                 |   |
+.....|   |   *-------------------------------*   |   |
+.....|   |   |            Padding            |   |   |
+.....|   |   |   *-----------------------*   |   |   |
+.....|   |   |   |                       |   |   |   | 
+Left |   |   |   |        CONTENT        |   |   |   | Right
+.....|   |   |   |                       |   |   |   | 
+.....|   |   |   *-----------------------*   |   |   |
+.....|   |   |            Padding            |   |   |
+.....|   |   *-------------------------------*   |   |
+.....|   |                Border                 |   |
+.....|   *---------------------------------------*   |
+.....|                    Margin                     | 
+.....*-----------------------------------------------*
+..........................Bottom
+
+El orden de las propiedades es; TOP RIGHT BOTTOM LEFT
+
+Por ejemplo para la proiedad PADDING se puede poner:
+padding: 0px 0px 0px 0px; 
+
+donde cada número representa a top, right, bottom y left respectivamente.
+
+La propiedad width define la anchura sólo del contenido sin tener en cuenta ni el padding ni el border ni margin.
+Lo mismo pasa con heght. Solo el alto del contenido, y no de los conteedores (padding, border, y margin)
+
+Box-sizing
+
+Con esta propiedad se puede definir las dimensiones totales de una caja teniendo en cuenta el content+padding+border. Queda afuera únicamente el Margin.
+
+Por default, box-sizing = content-box
+Se puede poner en 
+
+box-sizing: border-box; 
+
+Esto quiere decir que se le suma el box-sizing es el nùmero que da el tota del tamaño hasta el borde.
+
