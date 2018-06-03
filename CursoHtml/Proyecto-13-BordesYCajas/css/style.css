@@ -5,7 +5,7 @@ body{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 1200px;
-	background-color: blue;
+	background-color: gray;
 	background-attachment: fixed;
 	font-size: 16px;
 }
@@ -30,5 +30,17 @@ p{
 }
 
 div{
+	background: orange;
+}
+
+body :nth-child(2){
 	background: yellow;
+}
+body :nth-child(3){
+	background: red;
+}
+
+.comienzo{
+	display: inline;
+	width: 200px;
 }

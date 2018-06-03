@@ -1,0 +1,10 @@
+﻿ul{
+	display: table;
+}	
+ul li{
+	display: table-cell;
+	background: red;
+	padding: 10px;
+	border-radius: 5px;
+	border: 10px solid yellow;
+}

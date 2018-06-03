@@ -304,3 +304,65 @@ box-sizing: border-box;
 
 Esto quiere decir que se le suma el box-sizing es el nùmero que da el tota del tamaño hasta el borde.
 
+
+Los párrafos por default se muestran en bloque pero se pueden mostra en lìnea (es decir en la misma linea de otro objeto, como si fuera un link)
+Para eso se usa la propiedad:
+
+display: inline;   ó     display: block
+
+
+nav a{
+display: inline-block;
+width: 20%;
+height: 30px;
+background: yellow;
+margin-right: -4px;
+padding: 4px;
+border: 2px solid red;
+box-sizing: border-box;
+}
+
+
+float
+Los elementos fotantes se respetan entre ellos. No se apilan entre ellos, pero sì se apilan sobre los elementos en bloque que no estén flotando.
+
+--------------tablas------------------
+
+
+Podemos hacer que los elementos html se comporten como tablas o elementos de tablas:
+
+Las propiedades son:
+
+display:
+table-caption		título de una tabla
+table-column		columna de tabla
+table-row			fila de tablea
+table-cell			celda de tabla
+
+esto hace que una sección o párrafo se comporte como si fuera una tabla
+
+
+visibility 		oculta un elemento, pero sigue estando ahí. El resto de los elementos se comportan como si el elemento sin visibilidad aùn estuviera ahì.
+
+display: none	oculta un elemento y el resto se comporta como si no existiera.
+
+Con 
+
+position relative 
+
+un elemento o caja comienza a moverse. Las propiedades para moverse son: top right left y bottom. Suma la cantidad de pixeles que digamos desde bottom, right, left o top
+
+
+position absolute
+
+Cuando un elemento tiene esta propiedad se saca completamente del flujo normal del documento. Hace que el resto de los elementos lo ignoren.
+
+Una caja posicionada es aquella que tiene la propiedad position en 
+- absolute (en función al tamaño de la página o body)
+- relative (en función al contenedor)
+- fixed
+
+La ubicación de un elemento posicionado de forma absoluta dependerá de su ancestro posicionado más cercano. Si no hay ningún ancestro posicionado, se posiciona en función al body.
+
+
+
