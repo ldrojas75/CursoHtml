@@ -365,4 +365,8 @@ Una caja posicionada es aquella que tiene la propiedad position en
 La ubicación de un elemento posicionado de forma absoluta dependerá de su ancestro posicionado más cercano. Si no hay ningún ancestro posicionado, se posiciona en función al body.
 
 
+Cajas y bordes
+
+
+
 
