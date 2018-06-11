@@ -1,0 +1,70 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.4em;
+}
+
+/*------------------------------
+ANCHURA DEL SITIO
+------------------------------*/
+
+.contenedor{
+	width: 980px;
+	margin: 0 auto;
+}
+
+/*------------------------------
+ENCABEZADO
+------------------------------*/
+.encabezado{
+	background: #2c2c2c;
+	overflow: hidden;
+}
+
+.logo{
+	float: left;
+    position: relative;
+    top: 3px;
+}
+
+.logo img{
+	width: 300px;
+}
+
+
+.encabezado nav{
+	float: right;
+}
+
+.encabezado nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.encabezado nav ul li{
+	display: inline-block;
+	margin-right: -4px
+}
+.encabezado nav ul li a{
+	display: block;
+	color: #fff;
+	padding: 16px;
+	border-left: 1px solid #696969;
+	text-decoration: none;
+}
+.encabezado nav ul li a:hover{
+	background: #575757;
+}
+
+
+/*------------------------------
+ENCABEZADO
+------------------------------*/
+.introduccion-presentacion{
+	float: left;
+	
+}
