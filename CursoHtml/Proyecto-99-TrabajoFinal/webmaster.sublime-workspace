@@ -5,7 +5,27 @@
 		[
 			[
 				"marg",
-				"margin-right\tproperty"
+				"margin-bottom\tproperty"
+			],
+			[
+				"pad",
+				"padding-bottom\tproperty"
+			],
+			[
+				"margin",
+				"margin-top\tproperty"
+			],
+			[
+				"pos",
+				"position\tproperty"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"font",
+				"font-size\tproperty"
 			],
 			[
 				"inli",
@@ -44,7 +64,7 @@
 			"file": "css/estilos.css",
 			"settings":
 			{
-				"buffer_size": 962,
+				"buffer_size": 2695,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -153,8 +173,8 @@
 						"selection":
 						[
 							[
-								507,
-								507
+								687,
+								687
 							]
 						],
 						"settings":
@@ -162,7 +182,7 @@
 							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 204.0,
+						"translation.y": 357.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -174,15 +194,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 962,
+						"buffer_size": 2695,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								960,
-								960
+								2693,
+								2693
 							]
 						],
 						"settings":
@@ -190,7 +210,7 @@
 							"syntax": "Packages/CSS/CSS.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 969.0,
+						"translation.y": 2653.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
