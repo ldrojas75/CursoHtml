@@ -167,3 +167,73 @@ ACCESO RÁPIDO
 .acceso-rapido h3 a:hover{
 	text-decoration: none;
 }
+
+
+/*------------------------------
+BLOQUE CONTENIDO
+------------------------------*/
+
+.bloque-contenido{
+	overflow: hidden;
+}
+
+.bloque-contenido .contenedor{
+	display: table;
+}
+
+
+.articulos {
+	background: #ffffff;
+	width: 65%;
+	display: table-cell;
+}
+
+.articulos article{
+	margin-bottom: 20px;
+}
+
+.articulos h2{
+	color: #34444444;
+	font: 1.625em;
+	border-bottom: 3px solid #0460ad;
+	padding-bottom: 25px;
+}
+
+
+.articulos img{
+	float: left;
+	width: 140px;
+	padding: 10px;
+	position: relative;
+	top: -7px;
+	border-radius: 25px;
+}
+
+.articulos article h1{
+	font-size: 1.25em;
+	margin: 0 0 8px 0;
+}
+
+
+.articulos article h1 a{
+	color: #444444;
+	text-decoration: none;
+}
+
+
+.articulos article h1 a:hover{
+	text-decoration: underline;
+}
+
+
+.articulos article p{
+	margin: 0;
+	font-size: 0.875em;
+}
+.comentario{
+	background: blue;
+	width:35%;
+	display: table-cell;
+}
+
+
