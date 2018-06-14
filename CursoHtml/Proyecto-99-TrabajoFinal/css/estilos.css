@@ -175,6 +175,7 @@ BLOQUE CONTENIDO
 
 .bloque-contenido{
 	overflow: hidden;
+	margin-top: 25px;
 }
 
 .bloque-contenido .contenedor{
@@ -237,3 +238,45 @@ BLOQUE CONTENIDO
 }
 
 
+/*------------------------------
+COMPLEMENTARIO
+------------------------------*/
+
+.complementario{
+	background: #0450ad;
+	width: 35%;
+	display: table-cell;
+	padding: 0 20px 20px;
+}
+
+.complementario h2{
+	font-size: 1.625em;
+	color: #fff;
+	font-weight: normal;
+	text-align: center;
+}
+
+.complementario ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+}
+.complementario li{
+		background: url("..images/ico-evento.png") no-repeat left center;
+		margin-bottom: 7px;
+		padding-left: 25px;
+}
+
+.complementario ul li a{
+	color: #fff;
+	text-decoration: none;
+
+}
+.complementario ul li a:hover{
+	text-decoration: underline;
+
+}
+.complementario ul li img{
+	width: 1.2em;
+	padding-right: 5px;
+}
