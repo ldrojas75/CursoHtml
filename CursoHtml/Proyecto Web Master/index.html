@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Proyecto para el curso de HTML5  y CSS3</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/estilos.css">
+
+<!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+   <!--[if lte IE 9]>
+
+
+ <style type="text/css">
+.encabezado,
+.presentacion,
+a.aprender-mas,
+.complementario,
+.social img{
+behavior:url(css/pie/PIE.php);	
+}
+</style>
+
+
+<![endif]--> 
+
+</head>
+<body>
+
+	<header class="encabezado" role="banner">
+		<div class="contenedor">
+			<a href="#" class="logo">
+				<img src="images/logo.png" alt="Logo del Sitio">
+			</a>
+
+			<nav role="navigation">
+				<ul>
+					<li><a href="#">Nosotros</a></li>
+					<li><a href="#">Servicios</a></li>
+					<li><a href="#">Contáctanos</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header> <!-- Fin de .encabezado -->
+
+
+	<div class="presentacion">
+		<div class="contenedor">
+
+			<div class="introduccion-presentacion">
+				<h1>EXPERTO HTML5 & CSS3 <br>
+					<span>Empieza a codificar hermosos sitios web en 8 horas</span>
+				</h1>
+				<a href="#" class="aprender-mas">Aprender más</a>			
+
+			</div>
+
+			<img src="images/computadora.png" alt="Computadora Portatil">
+
+		</div>
+	</div> <!-- Fin de .presentacion -->
+
+	<section class="acceso-rapido">
+		<div class="contenedor">
+			<h2>Acceso rapído</h2>
+			<ul>
+
+				<figure>
+					<a href="#"><img src="images/ico-nosotros.png" alt="Nosotros"></a>
+					<figcaption> <h3> <a href="#">Nosotros</a></h3></figcaption>
+				</figure>
+
+				<figure>
+					<a href="#"><img src="images/ico-servicios.png" alt="Servicios"></a>
+					<figcaption> <h3> <a href="#">Servicios</a></h3></figcaption>
+				</figure>
+
+				<figure>
+					<a href="#"><img src="images/ico-ubicanos.png" alt="Ubícanos"></a>
+					<figcaption> <h3><a href="#">Ubícanos</a></h3></figcaption>
+				</figure>
+
+				<figure>
+					<a href="#"><img src="images/ico-contactanos.png" alt="Contáctanos"></a>
+					<figcaption> <h3> <a href="#">Contáctanos</a></h3></figcaption>
+				</figure>
+			</div>
+		</section>  <!-- Fin de .acceso-rapido -->
+
+
+		<div class="bloque-contenido">
+			<div class="contenedor">
+				<main class="articulos" role="main">
+					<h2>Últimas noticias</h2>
+
+
+					<article>						
+						<img src="images/img-articulo1.jpg" alt="">
+						<h1><a href="#">Un perrito Feeling!</a></h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nostrum quod libero iste voluptate, ut. Corporis aperiam eos quam architecto. Facilis amet nesciunt voluptas eaque, minus esse saepe mollitia vero.</p>
+					</article>
+
+					<article>						
+						<img src="images/img-articulo2.jpg" alt="">
+						<h1><a href="#">Un perrito loco!</a></h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nostrum quod libero iste voluptate, ut. Corporis aperiam eos quam architecto. Facilis amet nesciunt voluptas eaque, minus esse saepe mollitia vero.</p>
+					</article>
+
+
+					<article>						
+						<img src="images/img-articulo3.jpg" alt="">
+						<h1><a href="#">Un perrito Hermoso!</a></h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nostrum quod libero iste voluptate, ut. Corporis aperiam eos quam architecto. Facilis amet nesciunt voluptas eaque, minus esse saepe mollitia vero.</p>
+					</article>
+
+				</main>
+
+				<aside class="complementario" role="complementary">
+					<h2>PRÓXIMOS EVENTOS</h2>
+					<ul>
+						<li><a href="#">Some of the cheapest prices around</a></li>
+						<li><a href="#">Wide range of policies to choose fromd Wide range of policies to choose fromd.</a></li>
+						<li><a href="#">Winter sports included with annual. </a></li>
+						<li><a href="#">Some of the cheapest prices around</a></li>
+						<li><a href="#">Wide range of policies to choose fromd</a></li>
+						<li><a href="#">Winter sports included with annual. </a></li>
+						<li><a href="#">Some of the cheapest prices around</a></li>
+						<li><a href="#">Wide range of policies to choose fromd</a></li>
+						<li><a href="#">Winter sports included with annual. </a></li>
+						<li><a href="#">Some of the cheapest prices around</a></li>
+						<li><a href="#">Wide range of policies to choose fromd</a></li>
+						<li><a href="#">Winter sports included with annual. </a></li>
+
+					</ul>
+
+				</aside>
+
+			</div>
+		</div>  <!-- Fin de .bloque-contenido -->
+
+		<section class="suscripcion">
+			<div class="contenedor">
+				<h2>Manténgase actualizado:</h2>
+				<form action="#">
+					<input type="text" name="nombre" placeholder="Ingresa tu nombre.." required>	
+					<input type="email" name="email" placeholder="Ingresa tu email.." required>
+					<input type="submit" value="Regístrate">
+				</form>
+
+
+			</div>			
+		</section>  <!-- Fin de .suscripcion -->
+
+		<footer class="piedepagina" role="contentinfo">
+			<div class="contenedor">
+				<small>Copyright © 2014 Nombre Empresa</small>
+				<nav> 
+					<ul>
+						<li><a href="#">Políticas del Sitio</a></li>
+						<li><a href="#">Preguntas frecuentes</a></li>
+						<li><a href="#"> Contáctanos</a></li>
+					</ul>
+				</nav>
+
+			</div>			
+		</footer><!-- Fin de .piedepaginan -->
+
+		<div class="social">
+			<a href="#" title="Vamos a Facebook"><img src="images/ico-face.jpg" alt="Facebook"></a>
+			<a href="#" title="Vamos a Youtube"><img src="images/ico-youtube.jpg" alt="Youtube"></a>
+			<a href="#" title="Vamos a Twitter"><img src="images/ico-twitter.jpg" alt="Twitter"></a>
+
+		</div>   <!--Fin de .social -->
+
+
+
+
+
+<!--[if lte IE 9]>
+    <script src="js/simple.js"></script>
+    <![endif]-->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

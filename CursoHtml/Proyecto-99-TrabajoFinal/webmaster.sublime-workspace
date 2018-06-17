@@ -5,19 +5,23 @@
 		[
 			[
 				"marg",
-				"margin-top\tproperty"
+				"margin-bottom\tproperty"
 			],
 			[
 				"pad",
-				"padding-right\tproperty"
+				"padding\tproperty"
+			],
+			[
+				"margin",
+				"margin\tproperty"
+			],
+			[
+				"tabe",
+				"table-cell\tdisplay"
 			],
 			[
 				"padd",
 				"padding-left\tproperty"
-			],
-			[
-				"margin",
-				"margin-bottom\tproperty"
 			],
 			[
 				"list",
@@ -67,7 +71,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 6072,
+				"buffer_size": 6495,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -76,8 +80,16 @@
 			"file": "css/estilos.css",
 			"settings":
 			{
-				"buffer_size": 4251,
+				"buffer_size": 5995,
 				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/html5shiv.js",
+			"settings":
+			{
+				"buffer_size": 10331,
 				"line_ending": "Unix"
 			}
 		}
@@ -124,7 +136,7 @@
 	"expanded_folders":
 	[
 		"/run/media/leonardo/00c853e7-7f96-4821-b2f0-e4234cc386fc/home/leonardo/Documentos/CursoHtml/Proyecto-99-TrabajoFinal",
-		"/run/media/leonardo/00c853e7-7f96-4821-b2f0-e4234cc386fc/home/leonardo/Documentos/CursoHtml/Proyecto-99-TrabajoFinal/images"
+		"/run/media/leonardo/00c853e7-7f96-4821-b2f0-e4234cc386fc/home/leonardo/Documentos/CursoHtml/Proyecto-99-TrabajoFinal/fonts"
 	],
 	"file_history":
 	[
@@ -138,7 +150,7 @@
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
@@ -152,6 +164,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"place",
+			"evento1",
+			"evento1.png"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -169,7 +184,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -178,15 +193,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6072,
+						"buffer_size": 6495,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4447,
-								4447
+								6354,
+								6354
 							]
 						],
 						"settings":
@@ -194,10 +209,10 @@
 							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1851.0,
+						"translation.y": 4840.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -206,26 +221,56 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4251,
+						"buffer_size": 5995,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2840,
-								2840
+								1078,
+								1078
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/CSS/CSS.sublime-syntax"
 						},
-						"translation.x": 0.0,
-						"translation.y": 1667.0,
+						"translation.x": 42.0,
+						"translation.y": 1020.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "js/html5shiv.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 10331,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -233,7 +278,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 26.0
 	},
 	"input":
 	{
@@ -270,7 +315,7 @@
 	"project": "webmaster.sublime-project",
 	"replace":
 	{
-		"height": 0.0
+		"height": 48.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -308,7 +353,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 269.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

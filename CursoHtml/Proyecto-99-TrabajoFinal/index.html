@@ -5,6 +5,21 @@
 	<title>Proyecto para el cursl de HTML5 y CSS3</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/estilos.css">
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<![endif]-->
+
+	<!--[if lte IE 9]>
+		<style type="text/css">
+		.encabezado,
+		.presentacion,
+		a.aprender-mas,
+		.complementario,
+		.social img{
+		behavior:url(css/pie/PIE.php);
+		}
+	</style>
+	<![endif]-->
 </head>
 <body>
 	<header class="encabezado" role="banner">
@@ -109,7 +124,9 @@
 			<h2>Manténgase actualizado:</h2>
 			<form action="#">
 				<input type="text" name="nombre" placeholder="Ingresa tu nombre" required="">
+				<script src="css/simple.js"></script>
 				<input type="email" name="email" placeholder="Ingresa tu e-mail" required="">
+				<script src="css/simple.js"></script>
 				<input type="submit" value="Regístrate">
 			</form>		
 
@@ -144,5 +161,9 @@
 	<small>
 	<div>Icons made by <a href="https://www.flaticon.es/autores/freepik" title="Configuración de ordenador">Configuración de ordenador</a> from <a href="https://www.flaticon.es/"     title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"     title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div><!--fin de incons made by-->
 	</small>
+	<!--[if lte IE 9]>
+	<script src="js/simple.js"></script>
+	<![endif]-->
+
 </body>
 </html>

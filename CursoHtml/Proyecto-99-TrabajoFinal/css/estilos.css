@@ -62,11 +62,12 @@ ENCABEZADO
 
 
 /*------------------------------
-ENCABEZADO
+PRESENTACION
 ------------------------------*/
 .presentacion{
-	overflow: hidden;
+	overflow: hidden; 
 	background: radial-gradient(280px at 25% 10%, #a3d4ff, #0460ad);
+	-pie-background: linear-gradient(150deg, #a3d4ff, #0460ad);
 	border-bottom: 3px solid #044e8b;
 }
 
@@ -112,11 +113,13 @@ a.aprender-mas {
 	text-shadow: 1px 1px 0 #000;
 	border-radius: 10px;
 	background: linear-gradient(to top, #319b41, #21c653);
+		-pie-background: linear-gradient(to top, #319b41, #21c653);
 	box-shadow: 0 8px 0 0 #20732f, 
 				0 0 25px 5px #fff;
 }
 a.aprender-mas:hover {
-background: linear-gradient(to top,#319b41, #42ff7b);
+     background: linear-gradient(to top,#319b41, #42ff7b);
+	-pie-background: linear-gradient(to top,#319b41, #42ff7b);
 }
 
 
@@ -280,3 +283,119 @@ COMPLEMENTARIO
 	width: 1.2em;
 	padding-right: 5px;
 }
+
+
+/*------------------------------
+SUSCRIPCION
+------------------------------*/
+
+.suscripcion {
+	overflow: hidden;
+	background: #eeeeee;
+	padding-left: 15px;
+	margin-top: 20px;
+}
+
+.suscripcion h2{
+	float: left;
+	font-size: 1.625em;
+	color: #444444;
+	font-weight: normal;
+}
+
+.suscripcion form{
+	float: right;
+	position: relative;
+	top: 14px;
+}
+.suscripcion form input{
+	border: 1px solid #cccccc;
+	padding: 10px;
+}
+
+.suscripcion form input[type="submit"]{
+	background: #0460ad;
+	color: #fff;
+	border: 1px solid #22314d;
+	text-shadow: 1px 1px 0 #000;
+	box-shadow: 0 -1px 0px #93badc inset;
+}
+.suscripcion form input[type="submit"]:hover{
+	background: #21bc4e;
+}
+
+/*------------------
+PIE DE PAGINA
+---------------------*/
+
+.piedepagina{
+	background: #444444;
+	padding: 20px 0;
+}
+
+.piedepagina .contenedor{
+	display: table;
+}
+
+.piedepagina small{
+	display: table-cell;
+	color: #fff;
+}
+
+.piedepagina nav{
+	display: table-cell;
+	text-align: right;
+}
+
+.piedepagina nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.piedepagina nav ul li{
+	display: inline-block;
+	padding-left: 10px;
+
+}
+
+.piedepagina nav ul li a{
+	color: #fff;
+	text-decoration: none;
+
+}
+
+.piedepagina nav ul li a:hover{
+	text-decoration: underline;
+}
+
+/*------------------------------
+REDES SOCIALES
+-------------------------------*/
+
+.social{
+	position: fixed;
+	top: 30%;
+	right: 0;
+	z-index: 100;
+}
+
+.social a{
+	display: block;
+	margin-bottom: 4px;
+	opacity: 0.5%;
+
+}
+
+.social a:hover{
+	opacity: 1;
+}
+
+.social a img{
+	    width: 40px;
+	    border-radius: 50%;
+		display: block;
+}
+
+
+
