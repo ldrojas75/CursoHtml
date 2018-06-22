@@ -303,20 +303,25 @@ www.shutterstock.com
 
 Estructura semántica títpica de un sitio				
 
+<head>
+</head>
+<body>
 ______________________________				
-<header>...</header>	
+<header role="banner">...</header>	
 ______________________________		
+<main>
 <section>		|		
-<article>	|	<aside>	
-|
-|
-|
-</article>	|	</aside>	
-</section>		|		
+<article>	    |	<aside>	
+|  <div>
+|    <p></p>
+|  </div>
+</article>	    |	</aside>	
+</section>		|
+</main>		
 ______________________________				
 <footer>...</footer>	
 ______________________________
-
+</body>
 
 
 Las etiquetas estructurales no tienen un estilo ninguno. No determinan ni la forma ni el lugar donde se va a mostrar el contenido.					
@@ -353,3 +358,13 @@ crear una tabla con 3 columnas y 4 filas con la etiqueta Elemento#
 ul>li{Elemento $}*5
 Crea una lista con 5 elementos numerados.
 
+----------------------------
+Roles: WAI-ARIA Accesibilidad
+
+role="banner" => parte genérica del sitio
+role="navigation" => navegación del sitio
+role="main" => lugar principal
+role="complementary" => por ejemplo para los aside
+role="contentinfo" => para el footer
+role="article" => para español
+role="link" => para los enlaces
