@@ -48,6 +48,10 @@ Crear listas numeradas - funciona junto con <li> </li>
 Elemento de la lista	
 <ul>...</ul>
 Unordered list: listas desordenadas o de viñetas. Funciona igual que el ol	
+<dl>     (crear una lista de definición)
+   <dt>  (término a definir) </dt>
+   <dd>  (descripción o definición del término) </dd>
+</dl>
 <abbr title="Esto Es Hola">EEH</abbr>
 Definir una abreviatura	
 <a>...</a>
@@ -56,6 +60,7 @@ Enlace de hipertexto
 Genera un enlace a ningún lado (si solo tiene el #, sino después del numeral va el ID de un título en la misma página	
 <a href="hipervinculo">
 Descripción visible del hipervínculo</a>	Genera un enlace a ningún lado	
+<a href="hipervinculo" target="_blank"> hace que se abra una nueva pestaña del navegador.
 <time>...</time>
 Proveer al navegador una fecha legible por buscadores y máquinas.
 <time datetime="AAAA-MM-DD"		
