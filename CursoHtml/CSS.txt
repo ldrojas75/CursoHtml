@@ -365,8 +365,61 @@ Una caja posicionada es aquella que tiene la propiedad position en
 La ubicación de un elemento posicionado de forma absoluta dependerá de su ancestro posicionado más cercano. Si no hay ningún ancestro posicionado, se posiciona en función al body.
 
 
+*---------------------------------------
 Cajas y bordes
 
+Cómo ponerle box-sizing y border-box a todos los elementos.
+(Esto hace que cuando uno define el alto y ancho de un elemento se cuente el total, es decir que contemple el padding.
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 
+
+*-------------------------------------
+LIMPIAR LOS FLOATS
+
+Normalmente se define una clase para todo el contenido que se llama "clearfix" en el HTML.
+
+Luego en el CSS se pone:
+
+.clearfix:before,
+.clearfix.after{
+    content:'';
+    display: table;
+}   
+.clearfix.after{
+    clear: both;
+}
+
+Esto mejora mucho la forma en que se manejan los floats para evitar que se desarme todo el código al usarlos.
+
+También hay que agregar la clase clearfix a todos los elementos del HTML que se los haga flotar para que funcionen correctamente, de un modo más natural. 
+
+*---------------------------------------
+POSITION ABSOLUTE y RELATIVE
+
+Para poder fijarle a un elemento position absolute, antes se debe fijar al elemento padre position relative explícitamente. 
+
+Con esto se puede usar las propiedades botton, right, left, top
+
+POr ejemplo;
+
+bottom: -20px;
+
+
+
+POSITION FIXED
+
+hace que un elemento quede flotando de forma fija en la pantalla. Es como que se independiza del resto del código. Es lo que se utiliza para las barras de navegación de los sitios. 
+
+OJO que hay que hacer que el contenido de abajo tenga algún padding.
+
+
+------------------------------------------------
 

@@ -97,24 +97,47 @@ Etiqueta para meter código JavaScript
 Formulario. nombrearchivo = url del script que procesará formulario en backend. Get envía la info a través de la URL (hasta 3000 caracteres). Pos es más seguro y viaja en una cabecera HTML y no es visible.	
 <input type="Tipo de campo" value="Valor predeterminado" name="Nombre del elemento">
 Campo de input del formulario. Sólo puede haber un input con un mismo name en un formulario, salvo que sea un radio button. Es como el ID	
+<input type="color" name="xxxx"> Crea una selección de color.
+<input type="date" name="xxxxx"> Permite input de una fecha con un calendario.
+<input type="datetime-local" name="xxxxx"> Permite input de una fecha con un calendario y hora.
+<input type="month" name="xxxxx"> Permite input de una fecha con un calendario mostrando un mes a mes.
+<input type="time" name="xxxxx"> Permite input de una hora.
+<input type="week" name="xxxxx"> Permite input de una fecha seleccionando una semana en particular.
+
+
+
 <label for="ID del campo">Etiqueta</label>
 Ponerle una etiqueta a un campo	
 <textarea> ... </textarea>
 Crea un campo de entrada de texto variable	
 <select>
-Crea una caja de selección	
+Crea una caja de selección (una lista desplegable)	
 <option value="zzz">Descripción</option>
 Muestra una opción de la caja de selección	
 </select>
 Cierra la caja de selección	
 <optgroup label="...">...</optgroup>
 Arma un elemento encabezado de sublistas	
+<feldset></fieldset> para encerrar semánticamente grupo de datos que tienen que ver con lo mismo dentro de un formulario. Encierra el grupo con un recuadro.
+<legend></legend> le pone una leyenda al recuadro fieldset
+
+
 <div id="contenedor" style="background: #ffffff; border: 2px solid #000000; margin: 40px">
 
 <footer></footer>
 Apartado para derechos de autor. Puede ser una sección en sí misma o estar dentro de un blockquote	
 <video src="Mivideo.ext"></video>
-Colocar un video	
+Colocar un video
+se puede agregar controls:
+<video controls preload="xxxxx" poster="xxxxxx" loop>
+con "controls" aparecen los controles para reproducir
+preload="auto"   (aparece el video inmediatamente, salvo que esté conectado con datos)
+preload="metadata" (descarga algunos datos pero no reproduce hasta darle play - datos como por ejemplo la duración)
+preload="none"	 (no aparece el video hasta que el usuario haga clic)
+poster="XXXX" es la ubicación de una imagen para que aparezca en el sitio del video hasta que el usuario le dé reproducir.
+
+loop (hace que el audio o video se reproduzca todo el tiempo)
+
 <source src="Mivideo" type="video/mp4">
 Subetiqueta - Le indica al navegador que ese video es la alternativa para reproducir en mp4	
 <source src="Mivideo" type="video/webm">
