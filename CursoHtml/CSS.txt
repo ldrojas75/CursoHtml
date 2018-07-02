@@ -421,5 +421,128 @@ hace que un elemento quede flotando de forma fija en la pantalla. Es como que se
 OJO que hay que hacer que el contenido de abajo tenga algún padding.
 
 
-------------------------------------------------
+*------------------------------------------------
 
+DISPLAYS
+
+---------------------------------------
+
+Display: inline
+
+LOS ELEMENTOS FLUYEN DENTRO DEL TEXTO (como si fueran del mismo párrafo)
+Hay elementos como el H1, em, y otros que por default son inlien. Esto quiere decir que no rompen el flujo de texto.
+
+El inline no aplica paddin arriba ni abajo. Sólo a derecha e izquierda.
+
+Display: inline-block
+
+Igual al anterior (no rompe el flujo) pero sí aplica padding arriba y abajo.
+Se le puede ablicar todo: margin.
+
+Display: block
+
+UNO ABAJO DE OTRO.
+Por default se aplica a todos los contenedores. El navegador ya lo aplica a los DIVs.
+Por default toman todo el ancho, pero se les puede aplicar margin, paddings, y siempre el navegador los pone uno abajo de otro.
+
+Display: none
+
+Desaparece un elemento, aunque sigue existiendo en el HTML
+
+Display: FLEX
+
+Primero todos los elementos tienen que estar en un contenendor que se defina como DISPLAY: FLEX;
+
+flex-direction: row (pone todos los elementos uno al lado del otro)
+flex-direction: column
+
+Sólo se puede usar uno al lado del otro o uno abajo del otro.
+
+justify-content: flex-start (por default. es a la izquiera)
+
+justify-content: flex-end (ubica los elementos a partir del final del contenedor)
+
+justify-content: center (ubica los elementos en el centro)
+
+justify-content: space-around (los separa de forma equidistante, como si fuera distibuir horizontal)
+
+justify-content: space-between (los separa de forma equidistante, pero ubica el primer elemento bien a la izquierda y el último bien a la derecha y a partir de ahí distibuye todos los elementos)
+
+
+
+flex-direction: wrap (hace quye midan correctamente)
+
+----------------
+Display TABLE
+----------------
+
+Al contenedor principal hay que ponerle
+
+display: table
+
+Y a los hijos se les puede poner
+
+display: table-cell;
+
+Esto convierte al contenedor en una celda de table.
+Aquí dentro por ejemplo se puede hacer alineación vertical de texto. 
+Por ejemplo usando un
+
+vertical-align: middle;
+
+-------------------------------
+BACKGROUND usando IMAGENES
+-------------------------------
+
+background-image: url(../img/imagen.png), otra imagen;
+background-repeat: no-repeat, imagen2;
+background-size: 80px, imagen2;
+background-position: right bottom, imagen2;
+background-position: center center, imagen2;
+background-position: 30px 55px, imagen2;
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+DISEÑO RESPONSIVO CON MEDIA QUERY
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+Es importante en el HTML anteponer el el HEAD una etqueta:
+	
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+El user-scalable lo que va a hacer es que el usuario no pueda hacer zoom in con los gestos del móvil.
+
+
+
+@media only screen and (max-width: 599px){
+	aquí dentro se ponen los selectores responsivos
+}
+
+Esto quiere decir que aplica sólo a pantallas y hasta 599 pixeles.
+
+Si queremos que las propiedades apliquen de un tamaño de pantalla a otro, se usa esta instrucción:
+
+@media only screen and (min-width: 600px) and (max-width: 800px){
+	aquí dentro se ponen los selectores responsivos
+}
+
+Se desarrolla como Mobile First o como Desktop First.
+
+Cuando se hace Desktop First quiere decir que se ponen todo el diseño para sitio de escritorio, y luego se ponene media queries para cuando el navegador se ejecuta en pantallas más pequeñas. Esto se hace poniendo el max-width:800px. Es decir, que en cualquier ancho menor a este, aplicarán los media queries específicos.
+
+Cuando se hace Mobile First, quiere decir que se diseña para que todo funcione bien en un móvil, pero se ponen en media queries las características específicas para cuando el sitio se ve en un dispositivo más grande. Se hace poniendo el min-width:800px; 
+
+
+IMAGENES
+
+
+También podemos decir qué imagenes mostrar de acuerdo a la defincióń o al tamaño de la pantalla o del navegador.
+
+Esto se hace directamente sobre el HTML
+
+<picture>
+	<source media="(max-width: 480px)" srcset="img/imagen_telefono.jpg">
+
+	<img class="imagen" src="img/aqui va la imagen default"
+</picture>
