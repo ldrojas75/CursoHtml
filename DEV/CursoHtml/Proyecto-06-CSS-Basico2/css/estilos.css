@@ -1,0 +1,11 @@
+p{
+	background: red ;
+}
+
+div.peligro p{background: blue;}
+
+/* este es un comentario */
+
+div#ciudado p{background: orange}
+
+body#inicio div p{background: /*color amarillo*/ yellow}

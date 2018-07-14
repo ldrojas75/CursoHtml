@@ -1,0 +1,41 @@
+﻿body{
+	background: url(../images/fondo.jpg) fixed;
+	font-size: 16px;
+	color: #fff;
+}
+
+nav a{
+	display: inline-block;
+	width: 20%;
+	height: 30px;
+	background: yellow;
+	margin-right: -4px;
+	padding: 4px;
+	border: 2px solid red;
+	box-sizing: border-box;
+}
+
+section{
+	width: 600px;
+	margin: 0 auto;
+	background: gray;
+}
+section img{
+	float: left;
+	height: 200px;
+	margin-right: 10px;
+}
+.caja1{
+	background: red;
+	height: 100px;
+	padding: 10px;
+	float: right;
+	width: 50%;
+}
+.caja2{
+	background: yellow;
+	height: 100px;
+	padding: 10px;
+	float: left;	
+	width: 50%;
+}

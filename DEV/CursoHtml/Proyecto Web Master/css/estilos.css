@@ -1,0 +1,467 @@
+*{
+	box-sizing:border-box;
+}
+
+body{
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.4em;
+}
+
+/*-------------------------------------------------------
+ANCHURA DEL SITIO
+--------------------------------------------------------*/
+.contenedor{
+	width: 980px;
+	margin: 0 auto;
+	/*border: 1px solid red;*/
+
+}
+
+/*------------------------------------------------------
+ENCABEZADO
+----------------------------------------------------------*/
+
+.encabezado{
+	background: #2c2c2c;
+	overflow: hidden;
+	box-shadow: 0 0 20px 0 #070707;
+	position: relative;
+}
+
+
+.logo{
+	float: left;
+	position: relative;
+	top: 7px;
+
+}
+.encabezado nav{
+	float: right;
+}
+.encabezado nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.encabezado nav ul li{
+	display: inline-block;
+	margin-right: -4px;
+}
+.encabezado nav ul li a{
+	display: block;
+	color: #fff;
+	padding: 28px;
+	border-left: 1px solid #696969;
+	text-decoration: none;
+}
+
+.encabezado nav ul li a:hover{
+
+	background:#575757;
+
+}
+
+
+/*-----------------------------------------
+PRESENTACION
+-----------------------------------------*/
+.presentacion{
+	background: radial-gradient(280px at 25% 10%, #A3D4FF, #0460ad);
+	-pie-background: linear-gradient(150deg, #A3D4FF, #0460ad);
+	border-bottom: 3px solid #044e8b;
+}
+
+.introduccion-presentacion{
+	display: inline-block;
+}
+
+.introduccion-presentacion h1{
+	color: #fff;
+	font-size:2.625em; /*42px*/
+	text-shadow: 1px 1px 0px #090909;
+	text-align: center;
+	margin-top: 70px;
+	margin-bottom: 40px;
+	margin-left: 20px;
+	line-height: 0.7em;
+}
+
+.introduccion-presentacion h1 span{
+	color: #fff;
+	font-size:0.380952380952381em; /*16px*/
+}
+
+a.aprender-mas{
+	font-size: 2.1875em; /*35px*/
+	border: 1px solid #0d5c25;
+	padding: 30px 50px;
+	background: blue;
+	display: block;
+	text-align: center;
+	margin: 10px 40px 55px;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 1px 1px 0 #000;
+	border-radius: 10px;
+	background: linear-gradient(to top,#319b41, #21c653);
+	-pie-background: linear-gradient(to top, #319b41, #21c653);
+
+	box-shadow: 0 8px 0 0 #20732f,
+	0 0 25px 5px #fff;
+}
+a.aprender-mas:hover{
+	background: linear-gradient(to top,#319b41, #42FF7B);
+	-pie-background: linear-gradient(to top, #319b41, #42FF7B);
+}
+
+.presentacion img{
+	float: right;
+	position: relative;
+	top: 20px;
+}
+
+/*----------------------------------
+ACCESO RAPIDO
+--------------------------------------*/
+.acceso-rapido{
+	background: #21bc4e;
+	overflow: hidden;
+	border-bottom: 3px solid #1c943f;
+}
+
+.acceso-rapido h2{
+	color: #fff;
+	font-size: 1.875em;
+	text-shadow:1px 1px 0 #000;
+	text-align: center;
+	border-bottom: 3px solid #fff;
+	padding-bottom: 16px;
+
+}
+.acceso-rapido  figure{
+	display: inline-block;
+	text-align: center;
+	width: 25%;
+	margin: 0 -4px 0 0;
+	padding: 0px;
+}
+
+.acceso-rapido  h3{
+	font-size: 2.1875em; /*35px*/
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+.acceso-rapido  h3 a{
+	color: #fff;
+	text-shadow:1px 1px 0 #000;
+	font-weight: normal;
+}
+.acceso-rapido  h3 a:hover{
+	text-decoration: none;
+}
+
+/*------------------------------------------
+BLOQUE CONTENIDO
+-------------------------------------------*/
+.bloque-contenido{
+	overflow: hidden;
+	margin-top: 25px;
+
+}
+
+.bloque-contenido .contenedor{
+	display: table;
+}
+
+.articulos {
+
+	width: 65%;
+	display: table-cell;
+	padding-right: 30px;
+}
+
+.articulos article{
+	margin-bottom: 10px;
+
+}
+.articulos h2{
+	color: #3444444;
+	font-size: 1.625em;
+	border-bottom: 3px solid #0460ad;
+	padding-bottom: 25px;
+
+}
+.articulos img{
+	float: left;
+	margin-right: 10px;
+	position: relative;
+	top: 4px;
+
+}
+
+.articulos article h1{
+	font-size: 1.25em;
+	margin: 0 0 8px 0;
+}
+
+.articulos article h1 a{
+	color: #444444;
+	text-decoration: none;
+}
+.articulos article h1 a:hover{
+	text-decoration:underline;
+}
+
+
+.articulos article p{
+	margin: 0;
+	font-size: 0.875em; /*14px*/
+}
+
+
+
+
+
+
+
+/*---------------------------
+COMPLEMENTARIO
+-----------------------------*/
+
+.complementario{	
+	background: #0460ad;
+	width: 35%;
+	display: table-cell;
+	padding: 0 20px 20px;
+	border-radius: 6px;
+
+}
+.complementario h2{	
+	font-size: 1.625em;
+	color: #fff;
+	font-weight: normal;
+	text-align: center;
+}
+
+.complementario ul{	
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.complementario ul li{	
+	background: url("../images/ico-evento.png") no-repeat left center;
+	padding-left: 25px;
+	margin-bottom: 7px;
+}
+
+.complementario ul li a{	
+	color: #fff;
+	text-decoration: none;
+}
+.complementario ul li a:hover{	
+	text-decoration:underline;
+}
+
+
+
+
+/*----------------------------------------
+SUSCRIPCION
+-----------------------------------------*/
+.suscripcion{
+	overflow: hidden;
+	background: #eeeeee;
+	padding: 15px 0;
+	margin-top: 20px;
+}
+
+.suscripcion h2{
+	float: left;
+	font-size: 1.625em;
+	color: #444444;
+	font-weight: normal;
+}
+.suscripcion form{
+	float:right;
+	position: relative;
+	top: 16px;
+}
+.suscripcion form input{
+	border: 1px solid #cccccc;
+	padding: 10px;
+}
+
+.suscripcion form input[type="submit"]{
+	background: #0460ad;
+	color: #fff;
+	border: 1px solid #22314d;
+	padding: 10px;
+	text-shadow: 1px 1px 0 #000;
+	box-shadow: 0 -1px 0px 0 #93badc inset;
+}
+.suscripcion form input[type="submit"]:hover{
+	background: #21bc4e;
+
+}
+
+
+
+/*---------------------------------
+PIE DE PAGINA
+------------------------------------*/
+.piedepagina{
+	background: #444444;
+	padding: 20px 0;
+}
+
+.piedepagina .contenedor{
+	display:table;
+}
+
+.piedepagina small{
+	display:table-cell;
+	color: #fff;
+}
+
+.piedepagina nav{
+	display:table-cell;	
+	text-align: right;
+}
+.piedepagina nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.piedepagina nav ul li{
+	display: inline-block;
+	padding-left: 10px;
+}
+
+.piedepagina nav ul li a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.piedepagina nav ul li a:hover{
+	text-decoration:underline;
+}
+
+/*------------------------------------
+REDES SOCIALES
+----------------------------------*/
+.social{
+	position: fixed;
+	top: 30%;
+	right: 0;
+	z-index: 100;
+}
+.social a{
+	display: block;
+	margin-bottom: 4px;
+	opacity: 0.8;
+}
+.social a:hover{
+	opacity: 1;
+}
+.social img{
+	border-radius: 50%;
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

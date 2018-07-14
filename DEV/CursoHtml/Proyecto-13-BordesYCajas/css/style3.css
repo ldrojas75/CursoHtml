@@ -1,0 +1,43 @@
+﻿body{
+	background: url(images/fondo.jpg) fixed;
+	font-size: 16px;
+	color: #fff;
+}
+
+.contenedor{
+	width: 960px;
+	margin: 0 auto;
+	background: gray;
+}
+
+header{
+	background: red;
+	clear:both;
+	height: 100px;
+}
+nav{float: left;
+	width: 20%;
+	background: green;
+}
+
+.contenido{
+	float: left;
+	background: orange;
+	width: 60%
+}
+
+.contenedor{
+	float: left;
+	background: blue;
+	width: 50%
+}
+
+aside{
+	float: left;
+	width: 20%;
+	background: blue;
+}
+footer{
+	background: pink;
+	clear: both;
+}

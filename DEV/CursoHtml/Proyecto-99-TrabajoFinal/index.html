@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Proyecto para el cursl de HTML5 y CSS3</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<![endif]-->
+
+	<!--[if lte IE 9]>
+		<style type="text/css">
+		.encabezado,
+		.presentacion,
+		a.aprender-mas,
+		.complementario,
+		.social img{
+		behavior:url(css/pie/PIE.php);
+		}
+	</style>
+	<![endif]-->
+</head>
+<body>
+	<header class="encabezado" role="banner">
+		<div class="contenedor">
+			<a href="#" class="logo">
+				<img src="images/logo.png" alt="Logo del sitio">
+			</a>
+
+			<nav role="navigation">
+				<ul>
+					<li><a href="#">Nosotros</a></li>
+					<li><a href="#">Servicios</a></li>
+					<li><a href="#">Contáctanos</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header> <!---Fin de .encabezado-->
+	<div class="presentacion">
+		<div class="contenedor">
+			<div class="introduccion-presentacion">
+				<h1>PDS TO HTML5 & CSS3 <br>
+					<span>HAND CODE A BEAUTIFUL WEBSITE IN 4 HOURS</span></h1>
+				<a class="aprender-mas" href="#">Aprender más</a>
+			</div> <!-- fin de .introduccion-presentacion" -->
+			<img src="images/computadora.png" alt="Computadora Portatil">
+		</div> <!-- fin de .contenedor -->
+	</div> <!-- fin de .presentacion -->
+
+	<section class="acceso-rapido">
+		<div class="contenedor">
+			<h2>Acceso rápido</h2>
+			<ul>
+				<figure>
+					<a href="#"><img src="images/ico-nosotros.png" alt="Nosotros"></a>
+					<figcaption>
+						<h3><a href="#">Nosotros</a></h3>	
+					</figcaption>
+				</figure>
+				<figure>
+					<a href="#"><img src="images/ico-servicios.png" alt="Servicios"></a>
+					<figcaption>
+						<h3><a href="#">Servicios</a></h3>	
+					</figcaption>
+				</figure><figure>
+					<a href="#"><img src="images/ico-ubicanos.png" alt="Ubícanos"></a>
+					<figcaption>
+						<h3><a href="#">Ubícanos</a></h3>	
+					</figcaption>
+				</figure><figure>
+					<a href="#"><img src="images/ico-contactenos.png" alt="Contáctenos"></a>
+					<figcaption>
+						<h3><a href="#">Contáctenos</a></h3>	
+					</figcaption>
+				</figure>
+		</div><!-- fin .contenedor-->
+	</section> <!--fin section .acceso-rapido-->
+	<div class="bloque-contenido">
+		<div class="contenedor">
+			<main class="articulos" role="main">
+				<h2>ÚLTIMAS NOTICIAS</h2>
+				<article>
+					<img src="images/img-articulo1.jpg" alt="Avion artículo 1">
+					<h1><a href="#">Embraer ejecutivo</a></h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, temporibus, alias. Optio, tempore nihil corporis officiis eius delectus rem quae fugiat sequi ducimus qui libero deserunt! Natus corporis, vero itaque.</p>
+
+				</article>
+				<article>
+					<img src="images/img-articulo2.jpg" alt="Avion artículo 2">
+					<h1><a href="#">Embraer Tucano</a></h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, temporibus, alias. Optio, tempore nihil corporis officiis eius delectus rem quae fugiat sequi ducimus qui libero deserunt! Natus corporis, vero itaque.</p>
+
+				</article>
+				<article>
+					<img src="images/img-articulo3.jpg" alt="Avion artículo 3">
+					<h1><a href="#">Embraer E190 Pasajeros</a></h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, temporibus, alias. Optio, tempore nihil corporis officiis eius delectus rem quae fugiat sequi ducimus qui libero deserunt! Natus corporis, vero itaque.</p>
+
+				</article>
+			</main>
+			<aside class="complementario" role="complimentary">
+				<h2>PROXIMOS EVENTOS</h2>
+				<ul>
+					<li><img src="images/ico-evento.png" alt="calendario"><a href="#">Evento del día 1 - Salimos</a></li>
+					<li><img src="images/ico-evento.png" alt="calendario"><a href="#">Evento del día 2 - Hacer de todo</a></li>
+					<li><img src="images/ico-evento.png" alt="calendario"><a href="#">Evento del día 3 - Algo habrá que inventar</a></li>
+					<li><img src="images/ico-evento.png" alt="calendario"><a href="#">Evento del día 4 - entramos</a></li>
+					<li><img src="images/ico-evento.png" alt="calendario"><a href="#">Evento del día 5 - salimos de vuelta</a></li>
+					<li><img src="images/ico-evento.png" alt="calendario"><a href="#">Evento del día 6 - a correr!!!</a></li>
+					<li><img src="images/ico-evento.png" alt="calendario"><a href="#">Evento del día 7 - Ya sería suficiente</a></li>
+					<li><img src="images/ico-evento.png" alt="calendario"><a href="#">Evento del día 8 - Ya basta de eventos</a></li>
+					<li><img src="images/ico-evento.png" alt="calendario"><a href="#">Evento del día 9 - Ok, basta</a></li>
+					<li><img src="images/ico-evento.png" alt="calendario"><a href="#">Evento del día 10- Terminamos!!!</a></li>
+				</ul>
+				
+			</aside>
+
+		</div><!--fin .contenedor-->
+	</div><!--fin .bloque-contenido-->
+
+	<section class="suscripcion">
+		<div class="contenedor">
+			<h2>Manténgase actualizado:</h2>
+			<form action="#">
+				<input type="text" name="nombre" placeholder="Ingresa tu nombre" required="">
+				<script src="css/simple.js"></script>
+				<input type="email" name="email" placeholder="Ingresa tu e-mail" required="">
+				<script src="css/simple.js"></script>
+				<input type="submit" value="Regístrate">
+			</form>		
+
+		</div><!--fin de contenendor-->
+	</section><!--fin de .suscripcion-->
+
+	<footer class="piedepagina" role="contentinfo">
+		<div class="contenedor">
+			<small>Copyright (c)2014 Nombre Empresa</small>
+			<nav>
+				<ul>
+					<li><a href="#">Políticas del sitio</a></li>
+					<li><a href="#">Preguntas frecuentes</a></li>
+					<li><a href="#">Contáctanos</a></li>
+				</ul>
+			</nav>
+
+
+		</div><!--fin de .contenedor-->
+
+
+	</footer><!--fin de footer-->
+
+	<div class="social">
+		<a href="#" title="Vamos a Facebook"><img src="images/ico-face.png" alt="Facebook"></a>
+		<a href="#" title="Vamos a Youtube"><img src="images/ico-youtube.png" alt="Youtube"></a>
+		<a href="#" title="Vamos a Twitter"><img src="images/ico-twitter.png" alt="Twitter"></a>
+
+	</div><!--fin .social-->
+
+
+	<small>
+	<div>Icons made by <a href="https://www.flaticon.es/autores/freepik" title="Configuración de ordenador">Configuración de ordenador</a> from <a href="https://www.flaticon.es/"     title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"     title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div><!--fin de incons made by-->
+	</small>
+	<!--[if lte IE 9]>
+	<script src="js/simple.js"></script>
+	<![endif]-->
+
+</body>
+</html>

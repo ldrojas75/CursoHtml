@@ -1,0 +1,112 @@
+﻿/* --------------------------------------------------------------------
+todos los campos de formulario que están hablilitados para recibir input 
+
+
+form input:enabled{
+	background: green;
+}
+*/
+/*-----------------------------------------------------------------------
+sólo campos de input del tipo e-mail habilitados 
+
+
+form input[type="email"]:enabled{
+	background: green;
+}
+
+
+*/
+/*-----------------------------------------------------------------------
+sólo campos de formulario "checked"
+pero sòlo aplica a la siguiente etiqueta 
+
+form label{
+	color: gray;
+}
+form input:checked + label{
+	color: green;
+}
+*/
+
+/*-----------------------------------------------------------------------
+seleccionar el pseudoelemento primer lìnea de un párrafo
+
+p::first-line{
+	background: red;
+}
+*/
+/*-----------------------------------------------------------------------
+seleccionar el pseudoelemento primer lìnea de un párrafo, dentro de un article
+
+article p:first-child::first-line{
+	background: red;
+}
+*/
+/*-----------------------------------------------------------------------
+seleccionar el pseudoelemento primera letra de un párrafo, dentro de un article
+
+article p::first-letter{
+	background: red;
+	color: white;
+	font-size: 30px;
+	padding: 10px;
+	float: left;
+	margin-left: 2px: 
+}
+*/
+/*-----------------------------------------------------------------------
+seleccionar el pseudoelemento espacio anterior o posterior un párrafo, 
+pero tener en cuenta que el contenido que se inserte o se afecte estará
+dentro de la etiqueta que estemos seleccionando. Es decir que puede verse
+afectado por otros estilos que estén definidos.
+El texto que se agrega dentro de "content:" en realidad en tiempo de ejecución 
+es como si no existiera. En el HTML no se puede seleccionar. Se vé pero no es 
+seleccionable.
+
+
+article p{
+	width: 300px;
+	border: 2px solid black;
+	padding: 20px;
+}
+article p::before{
+	content: url(data:image/jpeg;base64,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);
+	size: 20px;
+}
+article p::after{
+	content: "--FINAL";
+}
+
+div p{
+	width: 500px;
+	padding: 45px;
+	border: 1px solid red;
+	margin: 10px auto;
+	border-radius: 10px;
+	background: #D8D7D7;
+}
+
+div p::before{
+	content: "****";
+
+}
+div p::after{
+	content: "****";
+
+}
+*/
+article{
+	background: green;
+	margin: 10px auto;
+	padding: 30px;
+	width: 500px;
+}
+
+article::before{
+	content: "";
+	background: red;
+	display: block;
+	width: 100%;
+	height: 100px;
+	transform: rotate(6deg);
+}
