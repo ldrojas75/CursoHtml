@@ -113,7 +113,7 @@ body{
 /** GLOBALES **/
 
 .contenedor{
-  width: 98%
+  width: 98%;
   margin: 0 auto;
 }
 
@@ -184,6 +184,15 @@ h3{
   background-color: white;
   color: #fe4918;
 
+}
+
+.button.transparente{
+    background-color: transparent;
+    border: 2px solid #ffffff;
+}
+
+.button.transparente:hover{
+    border: 2px solid #fe4918;
 }
 
 .button:hover{
@@ -375,7 +384,6 @@ div.menu-movil span{
   background-color: #ffffff;
   display: block;
 }
-
 
 /** talleres **/
 
@@ -610,8 +618,9 @@ div.tabla-precio ul li {
   line-height: 26px;
 }
 
+/*
 div.tabla-precio ul li::before {
-  font-family: 'Fontawsome';
+  font-family: 'Font Awesome 5 Brands';
   display: inline-block;
   vertical-align: top;
   padding: 0 5px;
@@ -619,6 +628,13 @@ div.tabla-precio ul li::before {
   color: green;
   -webkit-font-smoothing: antialiased;
   content: '\f14a';
+}
+*/
+
+div.tabla-precio ul li i{
+  color: green;
+  font-size: 1rem;
+  padding-right: 2px;
 }
 
 div.tabla-precio h3{
@@ -634,6 +650,176 @@ div.tabla-precio p.numero{
 }
 
 
+/* Mapa */
+
+div.mapa {
+  height: 420px;
+  background-color: green;
+}
+
+/** Testimoniales **/
+
+div.testimoniales{
+    padding-bottom: 20px;
+}
+div.testimonial{
+    padding: 5px;
+}
+
+@media only screen and (min-width:768px){
+    div.testimonial{
+        float: left;
+        width: 33.3%;
+    }
+}
+
+blockquote{
+    background-color: #ffffff;
+    border: 1px solid #e1e1e1;
+    position: relative;
+    margin: 0 0 10px 0;
+    padding-bottom: 20px;
+}
+blockquote p{
+    text-align: justify!important;
+    font-size: 1em!important;
+    font-family: 'PT Sans', sans-serif;
+    padding: 0 20px 0 65px;
+}
+blockquote p::before {
+    content: '\201c';
+    position: absolute;
+    left: 13px;
+    top: 8px;
+    font-size: 8rem;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #fe4918;
+}
+
+footer.info-testimonial{
+    padding: 0;
+}
+footer.info-testimonial img{
+    float: left;
+    width: 20%;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+footer.info-testimonial cite{
+    text-align: left;
+    color: #fe4918;
+    text-transform: uppercase;
+    padding-top: 20px;
+    font-size: 12px;
+    width: 66.6%;
+    float: right;
+    font-weight: bold;
+    font-style: normal;
+}
+footer.info-testimonial cite span{
+    color: #000000;
+    display: block;
+    text-transform: none;
+}
+
+/** NEWSLETTER **/
+
+div.newsletter {
+    position: relative;
+    height: auto;
+}
+
+div.newsletter::before{
+    background-image: url(../img/bg-newsletter.jpg);
+    content:'';
+}
+div.newsletter .contenido {
+    padding: 100px 0;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+}
+
+div.newsletter .contenido p{
+    text-transform: lowercase;
+    font-size: 1.2em;
+}
+
+div.newsletter .contenido h3 {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 7vw;
+
+}
+
+/** cuenta regresiva **/
+
+div.cuenta-regresiva ul li{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+@media only screen and (min-width:768px){
+    div.cuenta-regresiva ul li{
+        float: left;
+        width: 25%;
+    }
+}
+
+/** FOOTER **/
+
+footer.site-footer{
+    background-color: #353535;
+    padding-top: 40px;
+    margin-top: 20px;
+}
+
+footer.site-footer .contenedor > div {
+    color: #ffffff;
+    padding: 0px 20px;
+    font-size: 12px;
+    text-align: justify;
+}
+
+@media only screen and (min-width:768px){
+    footer.site-footer .contenedor > div{
+        width: 33.3%;
+        float: left;
+    }
+}
+
+footer.site-footer h3{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 20px;
+}
+
+footer.site-footer h3 span {
+    color: #fe4918;
+}
+
+footer.site-footer .ultimos-tweets li{
+    margin-bottom: 10px;
+}
+
+footer.site-footer nav.redes-sociales {
+    text-align: left;
+}
+
+p.copyright{
+    background-color: #2e2e2e;
+    color: #ffffff;
+    padding: 10px 0;
+    margin: 20px 0 0;
+    text-align: center;
+}
 
 
 /** VOY POR AQUI **/
