@@ -1,0 +1,212 @@
+ Introduce código JS en un archivo html
+ <script type="text/javascript">...</script> 
+---------------------
+ Introduce código JS desde un archivo externo:
+<script src="js/javascript.js"></script> 
+---------------------
+Define el nombre y valor de la variable
+var NombreDeVariable = valor
+---------------------
+Define variables
+
+var NombreUno, NombreDos, NombreTres; 
+Después de esto se puede asignar directamente los valores de variables con el signo igual.
+
+const miConstante = valor      - crea una constante
+
+---------------------
+Imprime texto en pantalla
+prompt('xxxx')
+Ejemplo:
+
+
+    var nombre = prompt('Como te llamas?');
+
+
+alert                  - muestra texto en pantalla
+Ejemplo:
+
+    alert("Bienvenido " + nombre + " de " + pais);
+
+---------------------
+Muestra el resultado de una variable en la consola de Chrome
+console.log(NombreDeVariable);
+---------------------
+Crear un objeto. OJO cambia la sintaxis de las variables. Ahora es con : en lugar de =, además no se usa ;
+
+var NombreDelObjeto = {
+	Variable1 : 'valorVariable1',
+	Variable2 : 'valorVariable2'
+}
+
+var auto = {
+	nombre : 'mustang',
+	motor : 5.5 ,
+	anio : 1975,
+	clasico: true,
+	color: "azul"
+}
+
+--------------------------
+Agregar un método a un objeto
+
+function miFuncion(variableDeInput);
+
+miObjeto.miMetodo = miFuncion;
+
+// Ahora ya puedo invocar el método:
+
+miObjeto.miMetodo();
+
+
+--------------------------
+Borrar un elemento de un objeto:
+
+delete Objeto.Variable ;
+---------------------------
+Crear un array
+
+var NombreDelArray = [valor1, valor2, valor3];
+
+Los elementos del array se cuentan desde cero.
+Otra forma de crearlo es de una forma con sintaxis más explícita.
+
+var NombdeDelArray = new Array(valor1, valor2, valor3);
+
+Para traerse un valor es simplemente:
+
+NombdreDelArray[NumeroDePosicion] 
+
+
+-----------------------------
+Crear una fecha
+var fecha = new Date();
+Guarda en la variable fecha un timestamp.
+
+
+-----------------------------
+Funciones del lenguaje:
+
+typeof(NombreDeVariable)   - Devuelve tipo de objeto
+parseInt(VariableString)   - Convierte en numero una cadena
+parseFloat(VariableStrg)   - Convierte en numero decimal una cadena
+number(VariableString)     - Convierte en numero una cadena
+if(condicion) {hacer esto} 
+  else {} ;                 - If, then, else.
+if(condicion) {hacer esto}
+  else if (condicion2) {hacer esto}
+  else {hacer esto otro}
+
+switch (variable) { 
+   case "valor":
+      qué hacer
+      break    //para salir del switch
+   case "valor2":
+      qué hacer
+      break
+   default:
+      qué hacer
+      break;  }
+                             - es un select Case
+
+for(inicio;condicion;incremento)
+   {qué hacer mientras no se cumple}
+                             - bucle
+for(i=0;i<20;i++){hacer}     - ejemplo de bucle
+for(i=0;i<varArray.length;i++)
+   {hacer}
+
+while(condicion) {que hacer
+   si hace falta poner el incremento
+  }
+
+var miFuncion = function() 
+  { que hacer }              - crea una función
+
+
+function miFuncion()
+   { qué hacer }             - crea una función
+
+
+function miFuncion(arg1, arg2,...)
+   {qué hacer}               - crea una función con argumentos
+
+Función típica para agregar elementos a un array:
+
+var miArray = [];            - crea el array vacío
+function miFunction(argumento)
+  {
+     miArray.push(argumento) 
+  };
+
+Ahora ya puedo llamar a miFuncion(miArgumento);
+
+
+
+-----------------------------
+Comparadores lógicos
+
+==
+===
+
+Para comparar igual usar "==" - No es estricto, es decir, si un número es igual al texto de un número, lo dará por verdadero. Por ejemplo 20 == "20" da verdadero.
+Para comparar estrictamente iguales hay que usar "==="
+<=             - menor o igual
+>=             - mayor o igual
+
+&&             - AND (separa términos)
+||             - OR  (separa términos)
+
+
+-----------------------------
+Operadores aritméticos:
+
+ +
+ -
+ *
+ /
+ variable++          - incrementa en uno la variable
+ variable--          - reduce en uno la variable
+ variable+= cantidad - incrementa variable en cantidad
+ variable-= cantidad - decrementa variable en cantidad
+variable*= cantidad  - multiplica variable por cantidad
+variable/= cantidad  - divide variable por cantidad
+
+
+
+-----------------------------
+Propiedades del un array o variable:
+
+NombreDelArray.length   - Cantidad de elementos en el array.
+NombreVarText.length    - Cantidad de caracteres en la variable.
+
+-----------------------------
+Métodos del array y variables
+
+NombreDelArray.reverse()  - Invierte el orden de los elementos
+NombreDelArray.push()     - Agrega un elemento al final del array, sin necesidad de decrile la posición.
+NombreDelArray.indexOf("valorBuscado") - Devuelve posición en el array del valor buscado.
+NombreDelArray.pop        - elimina el último valor del array
+NombdeDelArray.splice(inicial, cantidad) - elimina elementos del array, desde "inicial" la cantidad indicada en "cantidad".
+NombreDeVariable.toFixed(2) - Convierte variable numerica en punto fijo de 2 digitos.
+
+Filtrar valores de un array para armar un nuevo array
+Se usa el método filter con una función.
+
+var NuevoArreglo = PremierLeague.filter(function(equipo) {
+    return (equipo !== 'Chelsea')
+});
+
+NombreVarFecha.getFullYear()  - Devuelve el año de una variable declarada como fecha.
+NombreVarFecha.getDate()      - Devuelve el día 
+NombreVarFecha.getDay()      - Devuelve el día de la semana 
+NombreVarFecha.getHours()      - Devuelve la hora
+NombreVarFecha.getMinutes()      - Devuelve los minutos
+NombdeVarTexto.toUpperCase()     - Convierte la salida en mayúsculas
+NombreVarTexto.split(" ")        - Convierte cadena en array usando el escpacio (o lo que esté entre " ") como separador.
+NombreVerTexto.indexOf("algo")   - Devuelve la posicion inicial de la cadena entre comillas. Cuenta desde cero
+NombreVarTexto.slice(a, b)   - Devuelve desde a la cantidad b de posiciones. El resto no lo trae
+NombreVarTexto.toLowerCase()  - Devuelve el valor convertido en todo minúsculas. 
+
+
+
