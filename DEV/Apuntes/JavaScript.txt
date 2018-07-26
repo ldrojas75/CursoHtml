@@ -14,6 +14,8 @@ Después de esto se puede asignar directamente los valores de variables con el s
 
 const miConstante = valor      - crea una constante
 
+Las variables se pueden definir globales (desde afuera de las funciones), o sólo locales (definidas y utilizadas dentro de las funciones)
+
 ---------------------
 Imprime texto en pantalla
 prompt('xxxx')
@@ -131,6 +133,12 @@ function miFuncion()
 function miFuncion(arg1, arg2,...)
    {qué hacer}               - crea una función con argumentos
 
+
+function miFuncion(arg)
+    {qué hacer
+     return variable;}       - crea una función que devuelve valores.
+
+
 Función típica para agregar elementos a un array:
 
 var miArray = [];            - crea el array vacío
@@ -208,5 +216,58 @@ NombreVerTexto.indexOf("algo")   - Devuelve la posicion inicial de la cadena ent
 NombreVarTexto.slice(a, b)   - Devuelve desde a la cantidad b de posiciones. El resto no lo trae
 NombreVarTexto.toLowerCase()  - Devuelve el valor convertido en todo minúsculas. 
 
+
+-----------------------------
+
+DOM  Uso con HTML
+
+-----------------------------
+
+Para actuar JS en un div o párrafo, se puede usar el id="miID". 
+En JS:
+
+document.getElementById('miID')
+
+propiedad .innerHTML      - incrustará el resultado de la variable o función en ese lugar del HTML,
+
+document.head				- trae el head
+document.body				- trae el body
+document.querySelector('header') - trae cualquier otro elemento HTML al estilo css
+document.querySelector('#navegacion') - trae el id navegacion
+document.querySelector('.miclase')    - trae la clase
+
+Es conveniente que primero se cargue todo el HTML antes que comience a ejecutarse el código en JS. Para eso se pone esta función en el archivo de JS.
+
+(function(){
+  'use strict';
+  document.addEventListener('DOMContentLoaded', function(){
+
+  		// todo el código JS se pone aquí.
+
+  });
+})();
+
+para no escribir el getElementById siempre, se puede hacer que los elementos que necesitemos se guarden en una variable. Por ejemplo:
+
+var miVariable = document.getElementById('miID');
+
+Ahora, sobre la variable se pueden aplicar los métodos disponibles en el dom. Por ejemplo:
+
+miVariable.hasAttribute("class");		- devuelve true si tiene una clase asignada.
+miVariable.getAttribute("class");		- devuelve el nombre de la clase
+miVariable.setAttribute("qué atributo", "nuevo valor")	- Le asigna un nuevo valor a un atributo
+
+document.getElementsByClassname("nombreDeClase") - devuelve un array con todos los objetos de la clase nombreDeClase
+
+document.getElementsByTagName("etiqueta") - devuelve un array con todos los objetos que tienen una misma etiqueta HTML (por ejemplo: p, div, ul, a)
+
+document.querySelector('selector css') - agrupa en una variable el primer elemento con el mismo selector css. Por ejemplo ".miclase" "#miid".
+
+Ejemplo:
+
+var encabezado = document.querySelector('aside h2');
+    
+
+document.querySelectorAll('selector css') - agrupa en un arrray todos los elementos con el mismo selector de CSS 
 
 

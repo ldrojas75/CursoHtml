@@ -1,3 +1,31 @@
+var total, numero1, numero2;
+
+function totalPagar(numero1, numero2){
+    total = numero1 * numero2;
+    return total;
+};
+
+var granTotal = totalPagar(10, 20);
+var calculadora = document.getElementById('resultado').innerHTML = granTotal + " pesos";
+
+/*
+
+const IMPUESTO = .21;
+var cantidad;
+function totalPagar(numero){
+    numero = numero + (numero * IMPUESTO);
+    return numero;
+};
+
+var resultado = totalPagar(100);
+console.log("El total a pagar es: " + resultado);
+
+
+
+console.log("-------------")
+
+
+
 // Usando el if
 var edad1 = 30 ;
 var edad2 = 20 ;
@@ -16,6 +44,7 @@ if (cantidadAPagar>saldo) {console.log("No alcanza para pagar")
     console.log("El pago se realizó con éxito")
 };
 
+*/
 
 /*
 var texto = "Esto es una cadena de texto"
