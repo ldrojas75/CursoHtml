@@ -270,4 +270,65 @@ var encabezado = document.querySelector('aside h2');
 
 document.querySelectorAll('selector css') - agrupa en un arrray todos los elementos con el mismo selector de CSS 
 
+createElement('H1') = crea un elemento del tipo h1, luego hay que darle el párrafo.
+
+document.createTextNode('Hola Mundo') = crea el párrafo de texto que está entre comillas.
+
+VariableDelCreateElement.appendChild(VariableDelCreateTextNode) = hace que el texto quede dentro del H1.
+
+sidebar.appendChild(variableDelCreateElement) = agrega todo este objeto creado anters en el elemento sidebar
+
+Ejemplo de cómo se usa:
+
+var sidebar = document.querySelector('#sidebar');
+var nuevoElemento = document.createElement('H1');
+var nuevoTexto = document.createTextNode('Hola Mundo');
+nuevoElemento.appendChild(nuevoTexto);
+sidebar.appendChild(nuevoElemento);
+
+
+Para entender cómo funciona todo esto, hay que leerse el sitio:
+
+https://developer.mozilla.org/es/docs/Web/API/Node/nodeType
+
+
+Clonar un contenido:
+
+var contenido = document.querySelectorAll('main');
+var nuevoContenido = contenido[0].cloneNode(true);
+var sidebar = document.querySelector('aside');
+sidebar.insertBefore(nuevoContenido, sidebar.childNodes[5]);
+
+El insertBefore permite insertar un elemento en cualqueir lugar, antes que...
+
+
+Eliminar un nodo. 
+
+Siempre se elimina el hijo de un padre. Nunca se elimina un objeto directamente. Ejemplo:
+
+
+var primerPost = document.querySelector('main article');
+primerPost.parentNode.removeChild(primerPost);
+
+
+var enlaces = document.querySelector('#navegacion nav ul li a');
+enlaces.parentNode.removeChild(enlaces);
+
+-----------------------------
+Reemplazar un nodo con otro
+----------------------------
+
+
+var viejoNodo = document.querySelector('main h2');
+var nuevoNodo = document.querySelector('footer h2');
+viejoNodo.parentNode.replaceChild(nuevoNodo, viejoNodo);
+
+// reemplazar nodo con uno nuevo
+
+var nuevoTitulo = document.createElement('h2');
+var nuevoTexto = document.createTextNode('Hola mundo');
+nuevoTitulo.appendChild(nuevoTexto);
+var viejoNodo = document.querySelector('main h2');
+viejoNodo.parentNode.replaceChild(nuevoTitulo, viejoNodo);
+
 
