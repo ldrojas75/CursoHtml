@@ -314,6 +314,17 @@ primerPost.parentNode.removeChild(primerPost);
 var enlaces = document.querySelector('#navegacion nav ul li a');
 enlaces.parentNode.removeChild(enlaces);
 
+
+
+
+Cómo saber si cambió algo de un campo y que me mantenga el último valor:
+Esto devuelve el valor del campo cuando pierde el foco:
+BLUR
+
+variableQueYaTengo.addEventListener('blur', function())
+
+
+
 -----------------------------
 Reemplazar un nodo con otro
 ----------------------------

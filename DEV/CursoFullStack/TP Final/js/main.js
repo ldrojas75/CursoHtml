@@ -4,6 +4,18 @@
     var regalo = document.getElementById('regalo');
     document.addEventListener('DOMContentLoaded', function(){
 
+            var map = L.map('mapa').setView([-34.759856, -58.360131], 15);
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            L.marker([-34.759856, -58.360131]).addTo(map)
+            .bindPopup('Conferencia GdlWebcamp</br>Boletos ya disponibles')
+            .openPopup()
+            .bindTooltip('Un toolitp')
+            .openTooltip();
+
             // Campos datos usuarios
             var nombre = document.getElementById('nombre');
             var apellido = document.getElementById('apellido');
@@ -19,6 +31,7 @@
             var errorDiv = document.getElementById('error');
             var botonRegistro = document.getElementById('btnRegistro');
             var lista_productos = document.getElementById('lista-productos');
+            var suma = document.getElementById('suma-total');
 
             // Extras
             var camisas = document.getElementById('camisa_evento');
@@ -27,6 +40,41 @@
 
 
             calcular.addEventListener('click', calcularMontos);
+
+            pase_dia.addEventListener('blur', mostrarDias);
+            pase_dosdias.addEventListener('blur', mostrarDias);
+            pase_completo.addEventListener('blur', mostrarDias);
+
+            nombre.addEventListener('blur', validarCampos); //blur
+            apellido.addEventListener('blur', validarCampos); //blur
+            email.addEventListener('blur', validarCampos); //blur
+            email.addEventListener('blur', validarMail); //blur
+
+            function validarCampos(){
+                if(this.value == ''){
+                    errorDiv.style.display = 'block';
+                    errorDiv.innerHTML = "este campo es obligatorio";
+                    this.style.border = '1px solid red';
+                    errorDiv.style.border = '1px solid red'
+                } //if
+                else {
+                    errorDiv.style.display = 'none';
+                    this.style.border = '1px solid #cccccc';
+                }; //else
+            }; //validarCampos
+
+            function validarMail(){
+                if(this.value.indexOf("@") > -1) {
+                    errorDiv.style.display = 'none';
+                    this.style.border = '1px solid #cccccc';
+                } //if
+                else {
+                    errorDiv.style.display = 'block';
+                    errorDiv.innerHTML = "debe ser un email válido";
+                    this.style.border = '1px solid red';
+                    errorDiv.style.border = '1px solid red'
+                } //else
+            } //validarMail
 
             function calcularMontos(event){
                 event.preventDefault();
@@ -69,14 +117,42 @@
                         listadoProductos.push(cantEtiquetas + ' Etiquetas');
                     }
 
+                    lista_productos.style.display ="block";
+
                     lista_productos.innerHTML = '';
 
                     for (var i = 0; i< listadoProductos.length; i++) {
                         lista_productos.innerHTML += listadoProductos[i] + '</br>';
                     }
+                    suma.innerHTML = "$" + totalPagar.toFixed(2) ;
 
                 }
-            }
+            } // function calcularMontos()
+
+            function mostrarDias(){
+                var boletosDia = parseInt(pase_dia.value, 10) || 0,
+                    boletos2Dias = parseInt(pase_dosdias.value, 10) || 0,
+                    boletoCompleto = parseInt(pase_completo.value, 10) || 0;
+                var diasElegidos = [];
+
+                if(boletosDia > 0){
+                    diasElegidos.push('viernes');
+                }//if boletosDia
+
+                if(boletos2Dias > 0){
+                    diasElegidos.push('viernes', 'sabado')
+                } // if boletos2Dias
+
+                if(boletoCompleto > 0){
+                    diasElegidos.push('viernes', 'sabado', 'domingo');
+                } // if boletoCompleto
+
+                for(var i = 0; i < diasElegidos.length; i++){
+                    document.getElementById(diasElegidos[i]).style.display = 'block';
+                } // for
+
+
+            } // function mostrarDias()
 
     }); // DOM CONTENT LOADED
 })();
