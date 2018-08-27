@@ -1,0 +1,168 @@
+Qué es:
+
+Es una librería de JavaScrip para simplificar entre otras cosas la manipulación del DOM.
+Se puede usar con JS nativo.
+
+Tiene plugins gratis. 
+
+Funciona sobre el DOM igual que JavaStcript
+
+Diferencias con JS:
+
+JavaScript:
+document.getElementsByTagName('p')
+jQuey:
+$("p")
+
+JavaScript:
+document.getElementsByTagName('p').style.display = "none";
+jQuery:
+$("p").hide();
+
+
+---
+
+Con JavaScript:
+
+
+document.addEventListener('DOMContentLoaded', function(event){
+    var elemento = document.getElementById('contenido2');
+    var parrafo = document.createElement('p');
+    var texto = document.createTextNode("Con JavaScript es todo más difícil");
+
+    parrafo.appendChild(texto);
+    elemento.appendChild(parrafo);
+
+
+});
+
+
+Con JQuery:
+
+$(document).ready(function(){
+    $('#contenido').append("Con jQuery es más fácil")
+});
+
+
+
+
+==================================
+
+Nos aseguramos de que cargue toda la página antes de iniciar a ejecutar el código jQuery
+
+$(document).ready(function(){
+	// todo eĺ código va aquí
+}
+
+
+También se puede usar esta forma ás reducida todavía:
+
+$(function(){
+    'use strict'
+    // todo el código va aquí
+})
+
+
+--------------------------------
+Selectores
+--------------------------------
+
+$('header'); 				Seleccionar un header:
+
+$('header .claseDelDiv'); 	Seleccionar la claseDelDiv del Header
+
+$('.claseDelDiv');			Seleccionar la clase
+
+$('#nombreDelID');			Seleccionar un ID
+
+$('main article');			Selecciona todos los articles del contenido mail
+
+$('main article:first')		Selecciona sólo el primero
+
+$('main article:last')		Selecciona sólo el último
+
+$('main article:last p')	Selecciona los párrafos del último article
+
+$('main article:last p:first')	Selecciona solo el primer párrafo del último artículo
+
+$('nav ul li:first')		Selecciona primer elemento de la lista nav.
+
+$(this)						Selecciona el objetvo que está causando el evento (se usa dentro de un evento)
+
+-----------------------------------------
+Métodos.
+-----------------------------------------
+
+$(selector).hide()			Oculta los objetos del seleccionados. Es como un display none
+
+$(selector).show()			Muestra el objeto del selector 
+
+$(selector).remove()		Elimina el objeto del DOM completamente.
+
+$(selector).clone()			Clona en una variable el contenido seleccionado. Ejemplo:
+
+var copia = $(selector).clone();
+
+$(selector).append(variable)	Agrega al final del selector el contenido de la variable
+
+$(selector).prepend(variable)	Agrega al inicio del selector el contenido de la variable
+
+$(variable).appendTo(selector)
+$(variable).prependTo(selector)	Similar a los dos anteriores. Otra sintaxis
+
+$(selector).addClass('nombreClase')		Al elemento seleccionado le agrega una etiqueta de clase.
+
+$(selector).removeClass('nombreClase')		Al elemento seleccionado le quita la etiqueta de clase.
+
+
+e.preventDefault()				Evita que el objeto haga lo que el navegador está programado para hacer por default. Por ejemplo, navegar cuando se hace click en un enlace.
+
+$(selector).children()			Devuelve los hijos de un selector
+
+$(selector).children()[i]		Devuelve el hijo número "i" de un selector.
+
+$(selector).children().children()	Devuelve el siguiente nivel (es decir, los hijos del primer hijo de un selector)
+
+$(selector).parent()		Devuelve el primer nivel progenitor de un selector.
+
+$(selector).next()		Devuelve el siguiente elemento de un selector.
+Ejemplo:
+$(article:first).next()
+
+$(selector).text()		Devuelve el texto de un objeto seleccionado.
+
+$(selector).text("Hola")		Escribe texto de un objeto seleccionado.
+
+$(selector).html("<... ...>)	Escribe código HTML sobre un selector
+
+$(selector).attr('href')		Devuelve el valor de un atributo. En este caso del href.
+
+$(selector).attr('href', 'nuevo url') 	Cambia el valor de una url.
+
+$(selector).attr('target', '_blank') 	Cambia el atributo de una url para que abra en una nueva pestaña.
+
+
+Se puede usar sobre el elemento que inició un evento. Por ejemplo
+
+$(this).attr('src', 'img/imagen2.jpg')
+
+Esto cambiaría la imagen del objeto que inició el evento.
+
+
+
+
+
+-------------------------
+EVENTOS
+-------------------------
+
+$(selector).on('click',funcion(){})			Que pase algo al hacer click, y se ejecuta la función.
+
+$(selector).on('click',funcion(e){})		También la e puede estar reemplazada por evt ó event. Esto pasa a la función el evento.
+
+$(selector).on('mouseenter', function(){})	Es el equivalente al Hover. Cuando el mouse "entra" en el elemento.
+
+$(selector).on('mouseleave', function(){})	Cuando el mouse "sale" del elemento.
+
+
+
