@@ -77,6 +77,47 @@ main {
   float: left;
   padding-right: 40px;
 }
+
+/** Servicios **/
+div.servicios {
+    margin-top: 30px;
+}
+
+div.servicios nav {
+    background-color: #00b8e4;
+}
+
+div.servicios nav a {
+    padding: 10px;
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+div.servicios nav a.activo {
+    background-color: #db008e;
+    border: none;
+}
+
+div.servicios nav a:hover {
+    background-color: #db008e;
+}
+
+div.nuestros-servicios {
+    position: relative;
+    height: 200px;
+}
+
+div.nuestros-servicios > div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #db008e;
+    color: #ffffff;
+    padding: 20px;
+    display: none;
+}
+
 /** Entradas de post**/
 article {
     margin-top: 30px;

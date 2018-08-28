@@ -103,7 +103,7 @@ $(selector).clone()			Clona en una variable el contenido seleccionado. Ejemplo:
 
 var copia = $(selector).clone();
 
-$(selector).append(variable)	Agrega al final del selector el contenido de la variable
+$(selector).append(variable)	Agrega al final del selector el contenido de la variable. La variable puede contener código HTML con sus etiquetas. Por ejemplo <li> Hola </li>
 
 $(selector).prepend(variable)	Agrega al inicio del selector el contenido de la variable
 
@@ -164,5 +164,46 @@ $(selector).on('mouseenter', function(){})	Es el equivalente al Hover. Cuando el
 
 $(selector).on('mouseleave', function(){})	Cuando el mouse "sale" del elemento.
 
+$(selector).animate({'width': '200px'}, 5000)  Anima el ancho del objeto a 200px, durante 5 segundos.
+
+$(selector).sildeUp(1000)		Mueve el contenido seleccionado hacia arriba y el tránsito dura 1 segundo
+
+$(selector).sildeDown(1000)		Mueve el contenido seleccionado hacia abajo y el tránsito dura 1 segundo
+
+$(selector).load('archivo.html') Carca y mete en determinado selector el contenido HTML del archivo.
+
+------------------------------
+LENGUAJE
+-------------------------------
+
+var nombreDeVariable		Declarar una variable
+var nombreVariable = [1, 2, 3]	Crear un array
+coonsole.log(variable)		Mandar a la consola los valores de una variable
+
+
+Para recorrer un array se usa:
+
+$.each(nombreArray, function(i, v) {
+	
+})
+
+
+Para hacer una decisión:
+
+if(validación) {qué hago si es verdadero}
+   else {qué hago si es falso}
+
+
+
+Para declarar un objeto:
+
+var nombreDelObjeto = {
+	atributo: 'valor del atributo'
+	atributo2: 'valor del atributo2'
+	...
+}
+
+
+Los objetos se recorren igual que las variables tipo array. Ahora bien, el "i" de un objeto es el nombre del atributo. Para cada i hay un atributo, coincidente con el orden en que fueron declarardos.
 
 
